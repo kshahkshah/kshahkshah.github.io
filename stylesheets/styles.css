@@ -58,8 +58,9 @@ h1, h2{
 
 h3{
   font-size:1.2em;
-  margin-top:0.5em;
-  margin-bottom:0.5em;
+  color:#EEE;
+  margin-top:0.75em;
+  margin-bottom:0em;
 }
 
 .note { padding:0 0 0.5em 0; font-style:italic;}
