@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>{Title}</title>  
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">  
+    <link rel="shortcut icon" href="http://kunalashah.com/favicon.ico">  
+    <link rel="stylesheet" href="http://kunalashah.com/stylesheets/styles.css" type="text/css">
+  </head>
+  <body>
+    <div id="content">
+      <h1 id="title">{Title}</h1>
+      <p>{Description}</p>
+
+      <div class="posts">  
+        {block:Posts}  
+
+        <div id="postunit_{PostID}" class="postunit">  
+          {block:EditBox/}  
+
+          <div class="post">  
+            <b>{DayOfMonth} {ShortMonth}</b>                          
+            <h3><a href="{Permalink}">{Title}</a></h3>  
+            {Body}  
+
+            {block:Comments/}  
+          </div>  
+        </div>  
+
+        {block:Favorite   
+            hover_id='postunit_{PostID}'   
+            position_id='postunit_{PostID}'/}   
+
+        {/block:Posts}  
+      </div>
+
+      <p>{block:Pagination/}</p>
+
+    </div>
+  </body>
+</html>
