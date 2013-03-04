@@ -1,10 +1,10 @@
 body {
   margin:0;
   padding:0;
-  color:#EEE;
+  color:#FFF;
   font-size:13px;
-  font-family:"Helvetica Neue",Arial,sans-serif;
-  background:#000 url('../images/background.jpg') 0 0 no-repeat;
+  font-family:"Muli", "Helvetica Neue",Arial,sans-serif;
+  background:#000 url('../images/greatwave.jpg') 0 0 no-repeat;
   line-height:17px;
 }
 
@@ -12,29 +12,65 @@ div,ul,li,p,dd,dt,dl,h1,h2,h3 {
   font-size:1em;
   font-style:normal;
   font-weight:normal;
-  margin:0 0 1em 0;
+  margin:0;
   padding:0;
   list-style-type:none;
   background-repeat:no-repeat;
   background-position:0 0;
 }
 
-a, a:visited{text-decoration:none; color:#70BBF0;}
-a:hover{text-decoration:underline; color:#70BBF0;}
+a, a:visited{text-decoration:none; color:#FFF;}
+a:hover{text-decoration:underline; color:#FFF;}
 
 #container {
-  width:960px;
-  background-image:url('../images/overlay.png');
-  background-repeat:no-repeat;
+  margin:75px;
 }
 
-#title {
-  padding:100px 0 0 100px;
+.box {
+  background-color: rgba(0,0,0, 0.7);
+  overflow:hidden;
+  margin:20px 0 20px;
 }
 
-#content {
-  padding:0 0 0 100px;
-  width:600px;
+#facebook           { background-color: rgba(59, 89, 182, 0.4); }
+#twitter            { background-color: rgba(64,153,255, 0.4); }
+#email              { background-color: rgba(216,74,56, 0.4); }
+#linkedin           { background-color: rgba(200,200,200, 0.4); }
+#coloredword        { background-color: rgba(0,194,53, 0.4); }
+#humblesuggestions  { background-color: rgba(160,99,121, 0.5); }
+#upontheboard       { background-color: rgba(246,95,82, 0.4); }
+#github             { background-color: rgba(0,152,213, 0.4); }
+#cv                 { background-color: rgba(0,152,213, 0.4); }
+#blog               { background-color: rgba(40,88,69, 0.4); }
+#location           { background-color: rgba(0,152,213, 0.4); }
+
+
+.innerbox {
+  float:left;
+  padding:20px;
+  height:100%;
+  line-height:50px;
+  text-align: center;
+}
+.content {
+  padding:20px;
+}
+
+h1{
+  color:#EEEEEE;
+  font-size:2.5em;
+  text-align: left;
+}
+
+h2 {
+  color:#FFF;
+  font-size:1.75em;
+  line-height:50px;
+}
+
+h3,dt{
+  color:#EEE;
+  font-size:1.375em;
 }
 
 p {
@@ -44,24 +80,6 @@ p {
 
 dd p {
   margin-bottom:5px;
-}
-
-h1{
-  color:#bcf071;
-  font-weight:bold;
-  font-size:36px;
-}
-
-h2 {
-  color:#bcf071;
-  font-weight:bold;
-  font-size:1.375em;
-  margin:1em 0 0.75em 0;
-}
-
-h3,dt{
-  color:#FFF;
-  font-size:1.25em;
 }
 
 li{
