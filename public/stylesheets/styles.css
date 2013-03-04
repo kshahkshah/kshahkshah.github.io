@@ -22,9 +22,15 @@ div,ul,li,p,dd,dt,dl,h1,h2,h3 {
 a, a:visited{text-decoration:none; color:#FFF;}
 a:hover{text-decoration:underline; color:#FFF;}
 
-#container {
-  margin:75px;
+/*unsemantic adds 10px on each side*/
+.grid-container{
+  padding:0;
 }
+
+/*#container {
+  padding:5%;
+}
+*/
 
 .box {
   background-color: rgba(0,0,0, 0.7);
