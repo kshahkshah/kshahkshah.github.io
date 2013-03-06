@@ -54,18 +54,29 @@ a:hover{text-decoration:underline; color:#FFF;}
 .innerbox {
   float:left;
   padding:20px;
-  height:100%;
   line-height:50px;
   text-align: center;
+  height:100%;
 }
 .content {
-  padding:20px;
+  padding:0 20px;
+}
+
+#title h2 {
+  padding-left:2em;
+  float:left;
+}
+
+#footer .innerbox {
+  line-height:1em;
+  padding: 0.5em;
 }
 
 h1{
   color:#EEEEEE;
   font-size:2.5em;
   text-align: left;
+  float:left;
 }
 
 h2 {
@@ -84,8 +95,8 @@ p {
   line-height:21px;
 }
 
-dd p {
-  margin-bottom:5px;
+dd ul {
+  margin:5px 0;
 }
 
 li{
@@ -94,6 +105,9 @@ li{
 
 dd {
   margin:0 0 2em 0.75em;
+}
+dd:last-child {
+  margin:0 0 0 0.75em;
 }
 
 dt {
