@@ -41,7 +41,7 @@ a:hover{text-decoration:underline; color:#FFF;}
   height:100%;
 }
 .content {
-  padding:25px;
+  padding:2em;
 }
 
 .shortbox {
@@ -56,8 +56,8 @@ a:hover{text-decoration:underline; color:#FFF;}
   text-align: center;
 }
 
-#title #subtitle {
-  margin-top:20px;
+#subtitle {
+  margin-top:1em;
   font-size:1.25em;
   font-weight:300;
   color:#CCC;
@@ -68,11 +68,6 @@ h1{
   font-size:2.5em;
   font-weight:300;
   float:left;
-}
-
-#blog h1{
-  clear:both;
-  float:none;
 }
 
 h2 {
@@ -114,14 +109,14 @@ dt {
   margin:0 0 0.5em 0;
 }
 
-#facebook           { background-color: rgba(59, 89, 182, 0.4); }
-#twitter            { background-color: rgba(64,153,255, 0.4); }
-#email              { background-color: rgba(216,74,56, 0.4); }
-#linkedin           { background-color: rgba(200,200,200, 0.4); }
-#coloredword        { background-color: rgba(0,194,53, 0.4); }
-#humblesuggestions  { background-color: rgba(160,99,121, 0.5); }
-#upontheboard       { background-color: rgba(246,95,82, 0.4); }
-#github             { background-color: rgba(0,152,213, 0.4); }
-#cv                 { background-color: rgba(0,152,213, 0.4); }
-#blog               { background-color: rgba(40,88,69, 0.4); }
-#location           { background-color: rgba(0,152,213, 0.4); }
+#facebook           { background-color: rgba(59, 89, 182, 0.4);   }
+#twitter            { background-color: rgba(64, 153, 255, 0.4);  }
+#email              { background-color: rgba(216, 74, 56, 0.4);   }
+#linkedin           { background-color: rgba(200, 200, 200, 0.4); }
+#coloredword        { background-color: rgba(0, 194, 53, 0.4);    }
+#humblesuggestions  { background-color: rgba(160, 99, 121, 0.5);  }
+#upontheboard       { background-color: rgba(246, 95, 82, 0.4);   }
+#github             { background-color: rgba(0, 152, 213, 0.4);   }
+#cv                 { background-color: rgba(0, 152, 213, 0.4);   }
+#blog               { background-color: rgba(40, 88, 69, 0.4);    }
+#location           { background-color: rgba(0, 152, 213, 0.4);   }
