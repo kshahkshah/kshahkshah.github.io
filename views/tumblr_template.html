@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!--
+      Formatted for readability
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+    <title>{Title}{block:SearchPage}: {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}: {PostSummary}{/block:PostSummary}</title>
+    <link rel="shortcut icon" href="http://kunalashah.com/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://kunalashah.com/stylesheets/unsemantic-grid-responsive-tablet.css" type="text/css">
+    <link rel="stylesheet" href="http://kunalashah.com/stylesheets/styles.css" type="text/css">
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-31254254-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+  <body id='blog'>
+    <div id="container" class="grid-container grid-50 prefix-25 suffix-25 mobile-grid-90 mobile-prefix-5 mobile-suffix-5">
+
+      <div class="box grid-parent" id="title">
+        <div class="content grid-100">
+          <a href="/" alt="blog.kunalashah.com"><h1>Human Constructs</h1></a>
+          <p id='subtitle'>
+            Thoughts on organizations, engineering, people, and nature.
+          </p>
+        </div>
+      </div>
+
+      <div class='box collapse grid-parent' id='contact'>
+        <a href="mailto:me@kunalashah.com">
+          <div class="grid-25 mobile-grid-50 shortbox" id='email'>email</div>
+        </a>
+        <a href="https://github.com/whistlerbrk">
+          <div class="grid-25 mobile-grid-50 shortbox" id='github'>github</div>
+        </a>
+        <a href="http://www.linkedin.com/pub/kunal-shah/51/3a2/397">
+          <div class="grid-25 mobile-grid-50 shortbox" id='linkedin'>linkedin</div>
+        </a>
+        <a href="https://twitter.com/whistlerbrk">
+          <div class="grid-25 mobile-grid-50 shortbox" id='twitter'>@whistlerbrk</div>
+        </a>
+      </div>
+
+<!--       <div class="box collapse grid-parent" id='search'>
+        <div class="grid-50 prefix-50 shortbox" id='searchbar'>
+          <form action="/search" method="get">
+            <input type="text" name="q" value="{lang:Search}" onclick="javascript:if (this.value == '{lang:Search}') this.value = '';"/> 
+          </form>
+        </div>
+      </div>
+ -->
+      {block:SearchPage}
+        <div class="grid-parent" id="blog-search">
+          <span class="permalink">{lang:Search}</span>
+          <div class="realpost">
+            {block:SearchResults}
+                {lang:SearchResultCount results for SearchQuery 2}.
+            {/block:SearchResults}
+            {block:NoSearchResults}
+                {lang:No search results for SearchQuery 2}.
+            {/block:NoSearchResults}
+          </div>
+        </div>
+      {/block:SearchPage}
+
+      {block:Posts}
+        <div class="grid-parent" id="blog-content">
+
+        {block:Text}
+          <div class="content grid-100 box text">
+            {block:Title}
+              <h2><a href="{Permalink}">{Title}</a></h2>
+            {/block:Title}
+
+            {Body}
+          </div>
+        {/block:Text}
+
+        {block:Photo}
+          <div class="content grid-100 box photo">
+            <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+
+            {block:Caption}
+              <div class="caption">{Caption}</div>
+            {/block:Caption}
+          </div>
+        {/block:Photo}
+
+        {block:Panorama}
+          <div class="content grid-100 box panorama">
+            {LinkOpenTag}
+              <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+            {LinkCloseTag}
+
+            {block:Caption}
+              <div class="caption">{Caption}</div>
+            {/block:Caption}
+          </div>
+        {/block:Panorama}
+
+        {block:Photoset}
+          <div class="content grid-100 box photoset">
+            {Photoset-500}
+
+            {block:Caption}
+              <div class="caption">{Caption}</div>
+            {/block:Caption}
+          </div>
+        {/block:Photoset}
+
+        {block:Quote}
+          <div class="content grid-100 box quote">
+            {Quote}
+
+            {block:Source}
+              <div class="source">{Source}</div>
+            {/block:Source}
+          </div>
+        {/block:Quote}
+
+        {block:Link}
+          <div class="content grid-100 box link">
+            <a href="{URL}" class="link" {Target}>{Name}</a>
+
+            {block:Description}
+              <div class="description">{Description}</div>
+            {/block:Description}
+          </div>
+        {/block:Link}
+
+        {block:Chat}
+          <div class="content grid-100 box chat">
+            {block:Title}
+              <h2><a href="{Permalink}">{Title}</a></h2>
+            {/block:Title}
+
+            <ul class="chat">
+              {block:Lines}
+                <li class="{Alt} user_{UserNumber}">
+                  {block:Label}
+                    <span class="label">{Label}</span>
+                  {/block:Label}
+
+                  {Line}
+                </li>
+              {/block:Lines}
+            </ul>
+          </div>
+        {/block:Chat}
+
+        {block:Video}
+          <div class="content grid-100 video">
+            {Video-500}
+
+            {block:Caption}
+              <div class="caption">{Caption}</div>
+            {/block:Caption}
+          </div>
+        {/block:Video}
+
+        {block:Audio}
+          <div class="content grid-100 audio">
+            {AudioPlayerBlack}
+
+            {block:Caption}
+              <div class="caption">{Caption}</div>
+            {/block:Caption}
+          </div>
+        {/block:Audio}
+
+        </div>
+      {/block:Posts}
+
+    
+      {block:IndexPage}
+        <div class='grid-parent'>
+        {block:Pagination}
+          <div class="post grid-100">
+            <span class="permalink"><strong>{lang:Navigate}</strong></span>
+            <div class="realpost"><div>
+            {block:NextPage}<a href="{NextPage}" id="past">&laquo; {lang:To the past}</a>{/block:NextPage}
+            <span id="page">{lang:Page CurrentPage of TotalPages}</span>
+            {block:PreviousPage}<a href="{PreviousPage}" id="future">{lang:To the future} &raquo;</a>{/block:PreviousPage}
+            </div></div>
+          </div>
+        {/block:Pagination}
+        </div>
+      {/block:IndexPage}
+
+    </div>
+  </body>
+</html>

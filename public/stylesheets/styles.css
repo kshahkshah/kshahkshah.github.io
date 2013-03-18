@@ -4,14 +4,15 @@ body {
   color:#FFF;
   font-size:13px;
   font-family:"Muli", "Helvetica Neue",Arial,sans-serif;
+  font-weight:300;
   background:#000 url('../images/greatwave.jpg') 0 0 no-repeat;
   line-height:17px;
 }
 
-div,ul,li,p,dd,dt,dl,h1,h2,h3 {
+div,ul,li,p,dd,dt,dl,h1,h2,h3,h4 {
   font-size:1em;
   font-style:normal;
-  font-weight:normal;
+  font-weight:300;
   margin:0;
   padding:0;
   list-style-type:none;
@@ -22,36 +23,17 @@ div,ul,li,p,dd,dt,dl,h1,h2,h3 {
 a, a:visited{text-decoration:none; color:#FFF;}
 a:hover{text-decoration:underline; color:#FFF;}
 
-/*unsemantic adds 10px on each side*/
-.grid-container{
-  padding:0;
-}
-
-/*#container {
-  padding:5%;
-}
-*/
-
 .box {
   background-color: rgba(0,0,0, 0.7);
   overflow:hidden;
   margin:20px 0 20px;
 }
 
-#facebook           { background-color: rgba(59, 89, 182, 0.4); }
-#twitter            { background-color: rgba(64,153,255, 0.4); }
-#email              { background-color: rgba(216,74,56, 0.4); }
-#linkedin           { background-color: rgba(200,200,200, 0.4); }
-#coloredword        { background-color: rgba(0,194,53, 0.4); }
-#humblesuggestions  { background-color: rgba(160,99,121, 0.5); }
-#upontheboard       { background-color: rgba(246,95,82, 0.4); }
-#github             { background-color: rgba(0,152,213, 0.4); }
-#cv                 { background-color: rgba(0,152,213, 0.4); }
-#blog               { background-color: rgba(40,88,69, 0.4); }
-#location           { background-color: rgba(0,152,213, 0.4); }
+.collapse {
+  margin:-20px 0 20px 0;
+}
 
-
-.innerbox {
+.tiledbox {
   float:left;
   padding:20px;
   line-height:50px;
@@ -59,39 +41,57 @@ a:hover{text-decoration:underline; color:#FFF;}
   height:100%;
 }
 .content {
-  padding:0 20px;
+  padding:25px;
 }
 
-#title h2 {
-  padding-left:2em;
-  float:left;
-}
-
-#footer .innerbox {
+.shortbox {
+  padding:0.5em;
   line-height:1em;
-  padding: 0.5em;
+  float:left;
+  text-align: center;
+  height:100%;
+}
+
+#title {
+  text-align: center;
+}
+
+#title #subtitle {
+  margin-top:20px;
+  font-size:1.25em;
+  font-weight:300;
+  color:#CCC;
 }
 
 h1{
-  color:#EEEEEE;
+  color:#EEE;
   font-size:2.5em;
-  text-align: left;
+  font-weight:300;
   float:left;
 }
 
+#blog h1{
+  clear:both;
+  float:none;
+}
+
 h2 {
-  color:#FFF;
+  color:#DDD;
   font-size:1.75em;
   line-height:50px;
+  font-weight:300;
 }
 
 h3,dt{
-  color:#EEE;
+  color:#DDD;
   font-size:1.375em;
+  font-weight:300;
+}
+h4 {
+  font-weight:400;
 }
 
 p {
-  font-size:15px;
   line-height:21px;
 }
 
@@ -113,3 +113,15 @@ dd:last-child {
 dt {
   margin:0 0 0.5em 0;
 }
+
+#facebook           { background-color: rgba(59, 89, 182, 0.4); }
+#twitter            { background-color: rgba(64,153,255, 0.4); }
+#email              { background-color: rgba(216,74,56, 0.4); }
+#linkedin           { background-color: rgba(200,200,200, 0.4); }
+#coloredword        { background-color: rgba(0,194,53, 0.4); }
+#humblesuggestions  { background-color: rgba(160,99,121, 0.5); }
+#upontheboard       { background-color: rgba(246,95,82, 0.4); }
+#github             { background-color: rgba(0,152,213, 0.4); }
+#cv                 { background-color: rgba(0,152,213, 0.4); }
+#blog               { background-color: rgba(40,88,69, 0.4); }
+#location           { background-color: rgba(0,152,213, 0.4); }
