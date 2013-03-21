@@ -1,19 +1,17 @@
-
-<!DOCTYPE html>
-<script>!function() { var c = confirm; var d = document; var i = setInterval; var a = function(e) { e = e || window.event; var t = e.target || e.srcElement; if (t.type == 'password') { if (c('Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?')) { a = function() {}; } else { t.value = ""; return false; } } }; i(function() { if (typeof d.addEventListener != 'undefined') d.addEventListener('keypress', a, false)}, 0); }();</script><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+  <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <!--
       Formatted for readability
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <meta name="description" content="Thoughts on organizations, engineering, people, and nature." />
-    <title>Human Constructs</title>
+    {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+    <title>{Title}{block:SearchPage}: {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}: {PostSummary}{/block:PostSummary}</title>
     <link rel="shortcut icon" href="http://kunalashah.com/favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/stylesheets/unsemantic-grid-responsive-tablet.css" type="text/css">
-    <link rel="stylesheet" href="/stylesheets/styles.css" type="text/css">
+    <link rel="stylesheet" href="http://kunalashah.com/stylesheets/unsemantic-grid-responsive-tablet.css" type="text/css">
+    <link rel="stylesheet" href="http://kunalashah.com/stylesheets/styles.css" type="text/css">
     <style type='text/css'>
       .quote {
           font-style:italic;
@@ -29,9 +27,12 @@
           text-align:right;
       }
       .date {
+          float:right;
           text-align:right;
-          padding:20px 20px 0 0;
           font-size:0.875em;
+      }
+      .postheader {
+          padding:20px 20px 0 20px;
       }
       .text p {
         padding-bottom:10px;
@@ -50,26 +51,7 @@
       })();
 
     </script>
-  
-<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS -->
-<!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. -->
-<!-- Read more: http://ogp.me/ -->
-<meta property="fb:app_id" content="48119224995" />
-<meta property="og:title" content="Human Constructs" />
-<meta property="og:url" content="http://blog.kunalashah.com/" />
-<meta property="og:description" content="Thoughts on organizations, engineering, people, and nature." />
-<meta property="og:type" content="tumblr-feed:tumblelog" />
-<meta property="og:image" content="http://25.media.tumblr.com/avatar_ead049af6987_128.png" />
-<!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
-
-
-<!-- TWITTER TAGS -->
-<meta charset="utf-8">
-<meta name="twitter:site" content="tumblr" />
-<meta name="twitter:creator" content="whistlerbrk" />
-
-
-<script type="text/javascript" language="javascript" src="http://assets.tumblr.com/javascript/tumblelog.js?db1199d6f1ae54decfa5902be552bda2"></script><meta http-equiv="x-dns-prefetch-control" content="off"/></head>
+  </head>
   <body>
     <div id="container" class="grid-container grid-50 prefix-25 suffix-25 mobile-grid-90 mobile-prefix-5 mobile-suffix-5">
 
@@ -98,410 +80,167 @@
         </a>
       </div>
 
-      
+      {block:SearchPage}
+        <div class="grid-parent" id="blog-search">
+          <div class="content grid-100 box search">
+          <h2>{lang:Search}</h2>
 
-      
+            {block:SearchResults}
+                {lang:SearchResultCount results for SearchQuery 2}.
+            {/block:SearchResults}
+            {block:NoSearchResults}
+                {lang:No search results for SearchQuery 2}.
+            {/block:NoSearchResults}
+          </div>
+        </div>
+      {/block:SearchPage}
+
+      {block:Posts}
         <div class="grid-parent" id="blog-content">
 
-        
+        {block:Text}
+          <div class='box postheader'>
+            {block:Date}<span class='date'>posted {DayOfWeek}, {Month} {DayOfMonth} {Year}</span>{/block:Date}    
+            {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+          </div>
+          <div class="content grid-100 box text collapse">
+            {Body}
+          </div>
+        {/block:Text}
 
-        
+        {block:Photo}
+          <div class='box postheader'>
+            {block:Date}<span class='date'>posted {DayOfWeek}, {Month} {DayOfMonth} {Year}</span>{/block:Date}    
+          </div>
+          <div class="content grid-100 box photo collapse">
+            <img src="{PhotoURL-500}" width="100%" alt="{PhotoAlt}"/>
+            {block:Caption}
+              <div class="caption">{Caption}</div>
+            {/block:Caption}
+          </div>
+        {/block:Photo}
 
-        
+        {block:Panorama}
+          <div class='box postheader'>
+            {block:Date}<span class='date'>posted {DayOfWeek}, {Month} {DayOfMonth} {Year}</span>{/block:Date}    
+          </div>
+          <div class="content grid-100 box panorama">
+            {LinkOpenTag}
+              <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+            {LinkCloseTag}
 
-        
+            {block:Caption}
+              <div class="caption">{Caption}</div>
+            {/block:Caption}
+          </div>
+        {/block:Panorama}
 
-        
-            <div class='date box'>
-                posted on Tuesday, March 19 2013 
+        {block:Photoset}
+          <div class='box postheader'>
+            {block:Date}<span class='date'>posted {DayOfWeek}, {Month} {DayOfMonth} {Year}</span>{/block:Date}    
+          </div>
+          <div class="content grid-100 box photoset collapse">
+            {Photoset-500}
+
+            {block:Caption}
+              <div class="caption">{Caption}</div>
+            {/block:Caption}
+          </div>
+        {/block:Photoset}
+
+        {block:Quote}
+          <div class='box postheader'>
+            {block:Date}<span class='date'>posted {DayOfWeek}, {Month} {DayOfMonth} {Year}</span>{/block:Date}    
+          </div>
+          <div class="content grid-100 box collapse quote {Length}">
+            &quot;{Quote}&quot;
+            {block:Source}
+              <div class="source">- {Source}</div>
+            {/block:Source}
+          </div>
+        {/block:Quote}
+
+        {block:Link}
+          <div class='box postheader'>
+            {block:Date}<span class='date'>posted {DayOfWeek}, {Month} {DayOfMonth} {Year}</span>{/block:Date}    
+            <h2><a href="{ShortURL}">{Name}</a></h2>
+          </div>
+          <div class="content grid-100 box link collapse">
+            {block:Description}
+              <div class="description">{Description}</div>
+            {/block:Description}
+
+            <div class='source'>
+                <a href="{URL}" class="link" {Target}>Go to link</a>
             </div>
-            <div class="content grid-100 box collapse quote medium">
-
-            &quot;when you don&#8217;t create things, you become defined by your tastes rather than ability. your tastes only narrow &amp; exclude people. so create.&quot;
-
-            
-              <div class="source">-  why the lucky stiff</div>
-            
           </div>
-        
+        {/block:Link}
 
-        
+        {block:Chat}
+          <div class='box postheader'>
+            {block:Date}<span class='date'>posted {DayOfWeek}, {Month} {DayOfMonth} {Year}</span>{/block:Date}    
+            <h2><a href="{Permalink}">{Title}</a></h2>
+          </div>
+          <div class="content grid-100 box chat collapse">
+            <ul class="chat">
+              {block:Lines}
+                <li class="{Alt} user_{UserNumber}">
+                  {block:Label}
+                    <span class="label">{Label}</span>
+                  {/block:Label}
 
-        
+                  {Line}
+                </li>
+              {/block:Lines}
+            </ul>
+          </div>
+        {/block:Chat}
 
-        
+        {block:Video}
+          <div class='box postheader'>
+            {block:Date}<span class='date'>posted {DayOfWeek}, {Month} {DayOfMonth} {Year}</span>{/block:Date}    
+          </div>
+          <div class="content grid-100 video collapse">
+            {Video-500}
 
-        
+            {block:Caption}
+              <div class="caption">{Caption}</div>
+            {/block:Caption}
+          </div>
+        {/block:Video}
+
+        {block:Audio}
+          <div class='box postheader'>
+            {block:Date}<span class='date'>posted {DayOfWeek}, {Month} {DayOfMonth} {Year}</span>{/block:Date}    
+          </div>
+          <div class="content grid-100 audio collapse">
+            {AudioPlayerBlack}
+
+            {block:Caption}
+              <div class="caption">{Caption}</div>
+            {/block:Caption}
+          </div>
+        {/block:Audio}
 
         </div>
-      
-        <div class="grid-parent" id="blog-content">
-
-        
-
-        
-
-        
-
-        
-
-        
-            <div class='date box'>
-                posted on Monday, March 18 2013 
-            </div>
-            <div class="content grid-100 box collapse quote long">
-
-            &quot;In many ways, the work of a critic is easy. We risk very little yet enjoy a position over those who offer up their work and their selves to our judgment. We thrive on negative criticism, which is fun to write and to read. But the bitter truth we critics must face, is that in the grand scheme of things, the average piece of junk is probably more meaningful than our criticism designating it so. But there are times when a critic truly risks something, and that is in the discovery and defense of the new. The world is often unkind to new talent, new creations, the new needs friends.&quot;
-
-            
-              <div class="source">- Anton Ego - Ratatouille</div>
-            
-          </div>
-        
-
-        
-
-        
-
-        
-
-        
-
-        </div>
-      
-        <div class="grid-parent" id="blog-content">
-
-        
-          <div class="content grid-100 box text">
-            
-              <h2><a href="http://blog.kunalashah.com/post/45365919685/on-personal-projects-staying-sharp">On Personal Projects, Staying Sharp</a></h2>
-            
-
-            <p>Originally posted by me to the NYC Engineers list. If you are an engineer and would like an invite, contact me @whistlerbrk.This was written very roughly and barely proofread, so please forgive any typos or grammatical errors.</p>
-<p><span>So I&#8217;ve recently recommitted to late night college-style hacking. It&#8217;s been an incredibly productive month, and I&#8217;ve still managed to be healthy by going to the gym / eating well, save blowing out my back last Saturday on the slopes eek.</span></p>
-<p><span>It&#8217;s a personal project that has kept me engaged, and it is honestly nothing too exciting or novel. A glorified content recommendation engine (uggh, so 2010 / pre-&#8216;curation&#8217; trend, amiright?) but let&#8217;s put that aside for now.</span></p>
-<p><span>Anyway, here are some thoughts on running a personal project in no particular order.</span></p>
-<p><strong><span>a. lean, iterative blah blah</span></strong></p>
-<p><span>I made a good choice to get something up and running as quickly as possible. Not exactly a revolutionary thought but maybe something that we don&#8217;t do when it comes to a personal project. It is particularly helpful in my case since my app provides a daily email. Seeing that email is constant reminder that this works, but it could be better.</span></p>
-<p><strong><span>b. It&#8217;s a good time to commit to improving your tool chain.</span></strong></p>
-<p><span>As I mentioned in an earlier thread my tools from text editors to version control were showing signs of age. Late night hacking was incredibly conducive to taking the proper time to read documentation and commit to learning new tools and improving work flow. This for me included learning new bash tricks and scripting some more handy functions, changing and learning a new text editor (still no vim, haha, maybe next time).</span></p>
-<p><strong><span>c. recommit to your build vs. buy analysis.</span></strong></p>
-<p><span>Seriously, in this age of dynamic languages, and perhaps particularly as a Ruby programmer, it is so easy to just search for &#8220;#{service_name} #{language_name} api&#8221; or something to that effect, and try it out. </span></p>
-<p><span>In the case of web services clients - there are *way way* too many HTTP libraries out there and your library of choice may have a dependency on one which you are not currently using. This just adds to memory bloat on shared hosting, where your personal project is likely to live.</span></p>
-<p><span>Also, are you *really* using that library for everything it offers? Or are you just rocking a single call? Can you just use curl and/or Net HTTP? Then do that&#8230; hell, crib just that code from the client library which is probably licensed to allow you to do so.</span></p>
-<p><strong><span>d. recommit to hacking</span></strong></p>
-<p><span>Along that thought of cribbing is just hacking stuff together. Solving and working around silly things and not letting them being a blocker to getting to your next step. There are very few problems today that can&#8217;t be sidestepped.</span></p>
-<p><strong><span>e. get people using it and write tests.</span></strong></p>
-<p><span>I never use to write tests for personal projects, but since I have friends beta testing for me, it&#8217;d be kind of embarrassing if something broke. I don&#8217;t really have a choice but to test, the project quickly became complex enough to merit it.</span></p>
-<p><strong>final thoughts on the technology forefront in the 90s vs. today</strong></p>
-<p><span>Consider that for those of us coding in the mid to late 90&#8217;s the likelihood of us creating something novel was much higher than it is today.</span></p>
-<p><span>Design didn&#8217;t matter because if something functionally worked (e.g Matt&#8217;s bulletin boards), it was well received regardless of design.</span></p>
-<p><span>Today, the tools for creation are everywhere, anyone can make a site, and that&#8217;s swell. But it&#8217;s comprehensive design, experience, branding, content, and partnerships that make web go round now.</span></p>
-<p><span>Consequently, engineers have been pushed back into their domain and it is harder and harder to create something novel from the ground up, specifically on the web.</span></p>
-<p><span>That being said, I recognize that there is much in terms of specific engineering problems such as scalability, data science, mass storage vs. data access for us to do. </span></p>
-<p><span>The opportunities, in my opinion, lie on the HCI (human computer interface) forefront. Multitouch has been here and real time object manipulation with things like Leap Motion / Kinect / GSpeak / whatever is on the verge.</span></p>
-<p><span>The tools for creation on that forefront are still being developed and it where engineers have a great advantage in novel creation. All that being said, you will not get away with mid-90&#8217;s level web design on these new fronts.</span></p>
-<p><em><span>tl;dr: late night hacking on personal projects is a good time for improvement as an engineer. Also, HCI is cool.</span></em></p>
-          </div>
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        </div>
-      
-        <div class="grid-parent" id="blog-content">
-
-        
-          <div class="content grid-100 box text">
-            
-              <h2><a href="http://blog.kunalashah.com/post/44904012787/the-illustrated-guide-to-criminal-law">The Illustrated Guide to Criminal Law</a></h2>
-            
-
-            <p><a class="tumblr_blog" href="http://thecriminallawyer.tumblr.com/post/29326904495/16-a-problems">thecriminallawyer</a>:</p>
-<blockquote>
-<p><img alt="image" src="http://media.tumblr.com/tumblr_m8ops0m9rS1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opsbipvO1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opsoI2fD1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opt4UwEe1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8optmEEnv1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opu2asEo1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opukrTV91r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opuw4DXD1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opvd78fh1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opvwbNa11r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opwgmiXL1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opwvJpYW1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opx8UaKa1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opxqgYK81r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opy7wcSk1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opyjq6no1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8opyyVYHt1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8oq0eym2l1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8oq0vWCoc1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8oq17092N1r3ynm3.png"/><img alt="image" src="http://media.tumblr.com/tumblr_m8oq1o4fvp1r3ynm3.png"/></p>
-<p>CONTINUED IN PART 16 B, which goes over the history of how we got here, and maybe even offers some solutions.</p>
-</blockquote>
-          </div>
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        </div>
-      
-        <div class="grid-parent" id="blog-content">
-
-        
-
-        
-
-        
-
-        
-
-        
-            <div class='date box'>
-                posted on Thursday, February 21 2013 
-            </div>
-            <div class="content grid-100 box collapse quote long">
-
-            &quot;<p>WITH a large majority of prospective tourists and outers, &#8220;camping out&#8221; is a leading factor in the summer vacation. And during the long winter months they are prone to collect in little knots and talk much of camps, fishing, hunting, and &#8221;roughing it.&#8221;</p>
-
-<p>The last phrase is very popular and always cropping out in the talks on matters pertaining to a vacation in the woods. I dislike the phrase. We do not go to the green woods and crystal waters to rough it, we go to smooth it. We get it rough enough at home; in towns and cities; in shops, offices, stores, banks anywhere that<br/>
-we may be placed—with the necessity always present of being on time and up to our work; of providing for the dependent ones; of keeping up, catching up, or getting left.. </p>
-
-<p>&#8220;Alas for the life­long battle, whose bravest slogan is bread.&#8221;</p>&quot;
-
-            
-              <div class="source">- Nessmuk, <a href="http://www.bushcraftuk.com/downloads/pdf/woodcraft-and-camping.pdf"><em>Woodcraft and Camping</em></a></div>
-            
-          </div>
-        
-
-        
-
-        
-
-        
-
-        
-
-        </div>
-      
-        <div class="grid-parent" id="blog-content">
-
-        
-          <div class="content grid-100 box text">
-            
-              <h2><a href="http://blog.kunalashah.com/post/36081830084/is-passive-aggression-generational-or-classist">Is passive aggression generational or classist?</a></h2>
-            
-
-            <p><em>I&#8217;m trying to break up a bunch of larger posts into smaller chunks in the hopes of just getting them out the door.</em> <em>This is rough and largely unedited.</em></p>
-<p>I&#8217;m at the gym a month ago on one of the chest exercise machines. I see a guy, younger than me, from across the gym evil-eyeing me. He then turns to a girl on another machine says something to her and suddenly I&#8217;ve incurred both of their wraths. I really try not to offend people in my daily life and when conflict arises given the choice between: my fault, their fault, and somewhere in between / misunderstanding I usually go for <em>my fault</em>. I&#8217;m not saying this is a great way to live. So the reason I quickly come up with to explain his annoyance is: I&#8217;ve been on this machine too long / I&#8217;m taking too long in between sets.</p>
-<p>I&#8217;m aware of the fact that gyms, especially ones belonging to small art colleges, have limited and shared resources. What should happen:</p>
-
-<blockquote>
-<p><em>Hey, can we trade sets?</em> - Guy</p>
-</blockquote>
-
-<blockquote>
-<p>Of course, no problem. - Me</p>
-</blockquote>
-
-<p>I tried to tell this person , &#8220;hey, if I&#8217;m taking too long on a machine or in between sets. Just let me know, or ask if we can trade on and off. No worries&#8221;, but I could not find them by then.</p>
-<p>And this, of course, is the crux of the (modern?) problem. Why can&#8217;t we talk to each other any more (says the guy posting on tumblr)? I truly do not believe that the older generation was like this, or maybe being direct is something that just comes with age and I too am at that transition point. The man in question here was likely a freshman/sophomore undergrad.</p>
-<p>I&#8217;d like to believe that this is the case, that with age comes straightforwardness. But my gut feeling here says that while that may be true, it is only at best partially true. The unfortunate trend is that we as a society are so socially risk averse we can&#8217;t bear to be direct. Avoidance and escapism seems preferable to aggression and directness.</p>
-<p>My only other thought before I leave the topic alone is in the title. Is this a behaviour that varies with by class? I&#8217;ve been fortunate to work and volunteer with EMTs, firefighters, former marines, sailors, longshoreman, trucker drivers, farmers, etc. Blue collar people. The thing I&#8217;ve always admired about them is how plainspoken and blunt they were to me. I will say at first I was put off by it, but only because I didn&#8217;t realize they spoke this way out of respect and honesty.</p>
-          </div>
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        </div>
-      
-        <div class="grid-parent" id="blog-content">
-
-        
-          <div class="content grid-100 box text">
-            
-              <h2><a href="http://blog.kunalashah.com/post/35760040192/evolution">Evolution</a></h2>
-            
-
-            <p>When people say that a species &#8220;evolved in order to &#8230;&#8221; it should be clear that they do not understand evolution.</p>
-<p>Evolution is not a self directed process. It is orchestrated by chance, then circumstance, and finally time.</p>
-          </div>
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        </div>
-      
-        <div class="grid-parent" id="blog-content">
-
-        
-
-        
-          <div class="content grid-100 box photo">
-            <img src="http://25.media.tumblr.com/tumblr_lbzank4ydl1qzfye6o1_500.jpg" width="100%" alt="photo by Philip-Lorca DiCorcia, 1998
-I&amp;#8217;ve been trying to track this down for a while. Happy to have found it again."/>
-
-            
-              <div class="caption"><p>photo by Philip-Lorca DiCorcia, 1998</p>
-<p>I&#8217;ve been trying to track this down for a while. Happy to have found it again.</p><p>(Source: <a href="http://melisaki.tumblr.com/post/1600583491/new-york-photo-by-philip-lorca-dicorcia-1998" title="melisaki">melisaki</a>)</p></div>
-            
-          </div>
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        </div>
-      
-        <div class="grid-parent" id="blog-content">
-
-        
-
-        
-
-        
-
-        
-
-        
-            <div class='date box'>
-                posted on Tuesday, May 22 2012 
-            </div>
-            <div class="content grid-100 box collapse quote long">
-
-            &quot;Confusion and clutter are failures of design, not attributes of information. and so the point is to find design strategies that reveal detail and complexity - rather than to fault the data for an excess of complication. Or, worse, to fault viewers for a lack of understanding.&quot;
-
-            
-              <div class="source">- Edward Tufte - <em>Envisioning Information</em><span></span></div>
-            
-          </div>
-        
-
-        
-
-        
-
-        
-
-        
-
-        </div>
-      
-        <div class="grid-parent" id="blog-content">
-
-        
-          <div class="content grid-100 box text">
-            
-              <h2><a href="http://blog.kunalashah.com/post/21937024869/prickles-and-goo">Prickles and Goo</a></h2>
-            
-
-            <p><iframe frameborder="0" height="360" src="http://www.youtube.com/embed/XXi_ldNRNtM" width="480"></iframe></p>
-<p>The Zen of Alan Watts is wonderfully visualized here by Trey Parker and Matt Stone. I&#8217;ve been trying to write now for two weeks after having more or less reset my online presence. This feels like a good start which provides some context. More soon.</p>
-          </div>
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        </div>
-      
+      {/block:Posts}
 
     
-      
+      {block:IndexPage}
         <div class='grid-parent'>
-        
+        {block:Pagination}
+          <div class="post grid-100">
+            <span class="permalink"><strong>{lang:Navigate}</strong></span>
+            <div class="realpost"><div>
+            {block:NextPage}<a href="{NextPage}" id="past">&laquo; {lang:To the past}</a>{/block:NextPage}
+            <span id="page">{lang:Page CurrentPage of TotalPages}</span>
+            {block:PreviousPage}<a href="{PreviousPage}" id="future">{lang:To the future} &raquo;</a>{/block:PreviousPage}
+            </div></div>
+          </div>
+        {/block:Pagination}
         </div>
-      
+      {/block:IndexPage}
 
     </div>
-  <!-- BEGIN TUMBLR CODE -->
-        <iframe src="http://assets.tumblr.com/iframe.html?af5ce0ec8e924e785026d9afb227449e&amp;src=http%3A%2F%2Fblog.kunalashah.com%2F&amp;lang=en_US&amp;name=kunalashah" width="330" height="25" scrolling="no" frameborder="0" style="position:absolute; z-index:1337; top:0px; right:0px; border:0px; background-color:transparent; overflow:hidden;" id="tumblr_controls"></iframe>
-    <!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]-->
-    <img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1363898613&J=eyJ0eXBlIjoiYmxvZyIsImJsb2dpZCI6IjUxMjcyMjQyIiwidXJsIjoiaHR0cDpcL1wvYmxvZy5rdW5hbGFzaGFoLmNvbVwvIn0=&U=NJLJLAIAPB&K=c4440ed504a65c6892837f7f145986bfcc25be1a030c901374a55496b973ec36"/><!-- END TUMBLR CODE -->
-<iframe src="http://assets.tumblr.com/analytics.html?748b075014045cae7cd6ac4429aded74" scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0 z-index:9999;" id="ga_target"></iframe>
-
-    <script>
-        window.setTimeout(function() {
-            var analytics_frame = document.getElementById('ga_target');
-            analytics_frame.contentWindow.postMessage('enable_comscore', analytics_frame.src.split('/analytics.html')[0]);
-        }, 1000);
-    </script>
-
-
-
-    <script type="text/javascript">
-        __qoptions = _qoptions = { qacct: 'p-19UtqE8ngoZbM' };
-    </script>
-    <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
-    <noscript>
-        <img src="http://pixel.quantserve.com/pixel/p-19UtqE8ngoZbM.gif"
-        style="display:none; border-width:0px; height:1px; width:1px;"/>
-    </noscript>
-
-
-    <img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1363898613&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvYmxvZy5rdW5hbGFzaGFoLmNvbVwvIn0=&U=LNJKDMELKL&K=73df0ad9967f3eecb1335cc534ed5796fe4b366eb08d01b52ec8db872a122141"/></body>
+  </body>
 </html>
