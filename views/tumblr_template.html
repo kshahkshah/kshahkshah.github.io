@@ -12,6 +12,28 @@
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://kunalashah.com/stylesheets/unsemantic-grid-responsive-tablet.css" type="text/css">
     <link rel="stylesheet" href="http://kunalashah.com/stylesheets/styles.css" type="text/css">
+    <style type='text/css'>
+      .quote {
+          font-style:italic;
+      }
+      .quote .source {
+          font-style:normal;
+          font-weight:400;
+          text-align:right;
+      }
+      .link .source {
+          font-style:normal;
+          font-weight:400;
+          text-align:right;
+      }
+      .date {
+          text-align:right;
+          font-size:0.875em;
+      }
+      .text p {
+        padding-bottom:10px;
+      }
+    </style>
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -56,8 +78,9 @@
 
       {block:SearchPage}
         <div class="grid-parent" id="blog-search">
-          <span class="permalink">{lang:Search}</span>
-          <div class="realpost">
+          <div class="content grid-100 box search">
+          <h2>{lang:Search}</h2>
+
             {block:SearchResults}
                 {lang:SearchResultCount results for SearchQuery 2}.
             {/block:SearchResults}
@@ -72,18 +95,20 @@
         <div class="grid-parent" id="blog-content">
 
         {block:Text}
-          <div class="content grid-100 box text">
+          <div class='date box'>
             {block:Title}
               <h2><a href="{Permalink}">{Title}</a></h2>
             {/block:Title}
-
+            posted {block:Date}{DayOfWeek}, {Month} {DayOfMonth} {Year} {/block:Date}
+          </div>
+          <div class="content grid-100 box text collapse">
             {Body}
           </div>
         {/block:Text}
 
         {block:Photo}
           <div class="content grid-100 box photo">
-            <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+            <img src="{PhotoURL-500}" width="100%" alt="{PhotoAlt}"/>
 
             {block:Caption}
               <div class="caption">{Caption}</div>
@@ -104,7 +129,10 @@
         {/block:Panorama}
 
         {block:Photoset}
-          <div class="content grid-100 box photoset">
+            <div class='date box'>
+                posted {block:Date}{DayOfWeek}, {Month} {DayOfMonth} {Year} {/block:Date}
+            </div>
+            <div class="content grid-100 box photoset collapse">
             {Photoset-500}
 
             {block:Caption}
@@ -114,22 +142,30 @@
         {/block:Photoset}
 
         {block:Quote}
-          <div class="content grid-100 box quote">
-            {Quote}
+            <div class='date box'>
+                posted on {block:Date}{DayOfWeek}, {Month} {DayOfMonth} {Year} {/block:Date}
+            </div>
+            <div class="content grid-100 box collapse quote {Length}">
+
+            &quot;{Quote}&quot;
 
             {block:Source}
-              <div class="source">{Source}</div>
+              <div class="source">- {Source}</div>
             {/block:Source}
           </div>
         {/block:Quote}
 
         {block:Link}
           <div class="content grid-100 box link">
-            <a href="{URL}" class="link" {Target}>{Name}</a>
-
+            <h2><a href="{ShortURL}">{Name}</a></h2>
+              
             {block:Description}
               <div class="description">{Description}</div>
             {/block:Description}
+
+            <div class='source'>
+                <a href="{URL}" class="link" {Target}>Go to link</a>
+            </div>
           </div>
         {/block:Link}
 
