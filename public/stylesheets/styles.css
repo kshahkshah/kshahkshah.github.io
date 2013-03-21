@@ -26,7 +26,7 @@ a:hover{text-decoration:underline; color:#FFF;}
 .box {
   background-color: rgba(0,0,0, 0.7);
   overflow:hidden;
-  margin:20px 0 20px;
+  margin:20px 0;
 }
 
 .collapse {
@@ -39,6 +39,10 @@ a:hover{text-decoration:underline; color:#FFF;}
   line-height:50px;
   text-align: center;
   height:100%;
+}
+
+.boxtitle {
+  padding:2em 2em 0 2em;
 }
 .content {
   padding:2em;
@@ -66,6 +70,7 @@ a:hover{text-decoration:underline; color:#FFF;}
 h1{
   color:#EEE;
   font-size:2.5em;
+  line-height: 1em;
   font-weight:300;
   float:left;
 }
@@ -73,7 +78,6 @@ h1{
 h2 {
   color:#DDD;
   font-size:1.75em;
-  line-height:50px;
   font-weight:300;
 }
 
@@ -120,3 +124,9 @@ dt {
 #cv                 { background-color: rgba(0, 152, 213, 0.4);   }
 #blog               { background-color: rgba(40, 88, 69, 0.4);    }
 #location           { background-color: rgba(0, 152, 213, 0.4);   }
+
+
+#experience .boxtitle { background-color: rgba(0,0,0, 0.5); }
+#projects .boxtitle { background-color: rgba(0, 152, 213, 0.4);   }
+#proficiencies .boxtitle { background-color: rgba(216, 74, 56, 0.4); } 
+#education .boxtitle { background-color: rgba(160, 99, 121, 0.5); }
