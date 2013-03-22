@@ -9,11 +9,12 @@
     {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
     <title>{Title}{block:SearchPage}: {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}: {PostSummary}{/block:PostSummary}</title>
     <link rel="shortcut icon" href="http://kunalashah.com/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://kunalashah.com/stylesheets/unsemantic-grid-responsive-tablet.css" type="text/css">
     <link rel="stylesheet" href="http://kunalashah.com/stylesheets/styles.css" type="text/css">
     <style type='text/css'>
-     .quote {
+     .actualquote {
           font-style:italic;
       }
       .quote .source {
@@ -38,6 +39,19 @@
       .text p {
         padding-bottom:10px;
       }
+      .media {
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden; 
+      }
+      .media iframe, .media object, .media embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     </style>
     <script type="text/javascript">
 
@@ -58,11 +72,12 @@
 
       <div class="box grid-parent" id="blog-title">
         <div class="content grid-100">
-          <a href="/" alt="blog.kunalashah.com"><h1>Human Constructs</h1></a>
-          <br />
+          <a href="/" alt="blog.kunalashah.com"><h1>{Title}</h1></a>
+          {block:Description}
           <p id='subtitle'>
-            Thoughts on organizations, engineering, people, and nature.
+            {Description}
           </p>
+          {/block:Description}
         </div>
       </div>
 
@@ -106,6 +121,11 @@
           </div>
           <div class="content grid-100 box text collapse">
             {Body}
+
+            {block:NoteCount}<span class='notecount'><a href='{Permalink}'>{NoteCountWithLabel}</a></span>{/block:NoteCount}
+            {block:PostNotes}
+              <div>{PostNotes}</div>
+            {/block:PostNotes}
           </div>
         {/block:Text}
 
@@ -118,6 +138,10 @@
             {block:Caption}
               <div class="caption">{Caption}</div>
             {/block:Caption}
+            {block:NoteCount}<span class='notecount'><a href='{Permalink}'>{NoteCountWithLabel}</a></span>{/block:NoteCount}
+            {block:PostNotes}
+              <div>{PostNotes}</div>
+            {/block:PostNotes}
           </div>
         {/block:Photo}
 
@@ -133,6 +157,10 @@
             {block:Caption}
               <div class="caption">{Caption}</div>
             {/block:Caption}
+            {block:NoteCount}<span class='notecount'><a href='{Permalink}'>{NoteCountWithLabel}</a></span>{/block:NoteCount}
+            {block:PostNotes}
+              <div>{PostNotes}</div>
+            {/block:PostNotes}
           </div>
         {/block:Panorama}
 
@@ -146,6 +174,10 @@
             {block:Caption}
               <div class="caption">{Caption}</div>
             {/block:Caption}
+            {block:NoteCount}<span class='notecount'><a href='{Permalink}'>{NoteCountWithLabel}</a></span>{/block:NoteCount}
+            {block:PostNotes}
+              <div>{PostNotes}</div>
+            {/block:PostNotes}
           </div>
         {/block:Photoset}
 
@@ -154,10 +186,14 @@
             {block:Date}<span class='date'>posted {DayOfWeek}, {Month} {DayOfMonth} {Year}</span>{/block:Date}    
           </div>
           <div class="content grid-100 box collapse quote {Length}">
-            &quot;{Quote}&quot;
+            <span class='actualquote'>&quot;{Quote}&quot;</span>
             {block:Source}
               <div class="source">- {Source}</div>
             {/block:Source}
+            {block:NoteCount}<span class='notecount'><a href='{Permalink}'>{NoteCountWithLabel}</a></span>{/block:NoteCount}
+            {block:PostNotes}
+              <div>{PostNotes}</div>
+            {/block:PostNotes}
           </div>
         {/block:Quote}
 
@@ -174,6 +210,10 @@
             <div class='source'>
                 <a href="{URL}" class="link" {Target}>Go to link</a>
             </div>
+            {block:NoteCount}<span class='notecount'><a href='{Permalink}'>{NoteCountWithLabel}</a></span>{/block:NoteCount}
+            {block:PostNotes}
+              <div>{PostNotes}</div>
+            {/block:PostNotes}
           </div>
         {/block:Link}
 
@@ -194,6 +234,10 @@
                 </li>
               {/block:Lines}
             </ul>
+            {block:NoteCount}<span class='notecount'><a href='{Permalink}'>{NoteCountWithLabel}</a></span>{/block:NoteCount}
+            {block:PostNotes}
+              <div>{PostNotes}</div>
+            {/block:PostNotes}
           </div>
         {/block:Chat}
 
@@ -201,12 +245,17 @@
           <div class='box postheader'>
             {block:Date}<span class='date'>posted {DayOfWeek}, {Month} {DayOfMonth} {Year}</span>{/block:Date}    
           </div>
-          <div class="content grid-100 video collapse">
-            {Video-500}
+          <div class="content grid-100 box video collapse">
+            <div class='hide-on-mobile'>{Video-500}</div>
+            <div class='media hide-on-desktop'>{Video-250}</div>        
 
             {block:Caption}
               <div class="caption">{Caption}</div>
             {/block:Caption}
+            {block:NoteCount}<span class='notecount'><a href='{Permalink}'>{NoteCountWithLabel}</a></span>{/block:NoteCount}
+            {block:PostNotes}
+              <div>{PostNotes}</div>
+            {/block:PostNotes}
           </div>
         {/block:Video}
 
@@ -214,12 +263,16 @@
           <div class='box postheader'>
             {block:Date}<span class='date'>posted {DayOfWeek}, {Month} {DayOfMonth} {Year}</span>{/block:Date}    
           </div>
-          <div class="content grid-100 audio collapse">
+          <div class="content grid-100 box audio collapse">
             {AudioPlayerBlack}
 
             {block:Caption}
               <div class="caption">{Caption}</div>
             {/block:Caption}
+            {block:NoteCount}<span class='notecount'><a href='{Permalink}'>{NoteCountWithLabel}</a></span>{/block:NoteCount}
+            {block:PostNotes}
+              <div>{PostNotes}</div>
+            {/block:PostNotes}
           </div>
         {/block:Audio}
 
@@ -230,13 +283,10 @@
       {block:IndexPage}
         <div class='grid-parent'>
         {block:Pagination}
-          <div class="post grid-100">
-            <span class="permalink"><strong>{lang:Navigate}</strong></span>
-            <div class="realpost"><div>
+          <div class="content grid-100 box navigation">
             {block:NextPage}<a href="{NextPage}" id="past">&laquo; {lang:To the past}</a>{/block:NextPage}
             <span id="page">{lang:Page CurrentPage of TotalPages}</span>
             {block:PreviousPage}<a href="{PreviousPage}" id="future">{lang:To the future} &raquo;</a>{/block:PreviousPage}
-            </div></div>
           </div>
         {/block:Pagination}
         </div>

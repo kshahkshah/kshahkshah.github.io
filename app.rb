@@ -10,6 +10,6 @@ get '/cv' do
   erb :cv
 end
 
-get '/blog' do
-  erb :blog
+get '/tumblr' do
+  erb :tumblr
 end

@@ -20,8 +20,8 @@ div,ul,li,p,dd,dt,dl,h1,h2,h3,h4 {
   background-position:0 0;
 }
 
-a, a:visited{text-decoration:none; color:#FFF;}
-a:hover{text-decoration:underline; color:#FFF;}
+a, a:visited{text-decoration:none; color:rgba(0, 152, 213, 1);}
+a:hover{text-decoration:underline; color:rgba(0, 152, 213, 1);}
 
 .box {
   background-color: rgba(0,0,0, 0.7);
@@ -38,8 +38,15 @@ a:hover{text-decoration:underline; color:#FFF;}
   padding:20px;
   line-height:50px;
   text-align: center;
-  height:100%;
 }
+
+a .tiledbox, a:visited .tiledbox, a .shortbox, a:visited .shortbox {
+  text-decoration:none; color:#FFF;
+}
+a:hover .tiledbox, a:hover .shortbox {
+  text-decoration:underline; color:#FFF;
+}
+
 
 .boxtitle {
   padding:2em 2em 0 2em;
@@ -56,14 +63,14 @@ a:hover{text-decoration:underline; color:#FFF;}
   height:100%;
 }
 
-#title {
+#blog-title {
   text-align: center;
 }
 
 #subtitle {
   margin-top:1em;
   font-size:1.25em;
-  font-weight:300;
+  font-weight:400;
   color:#CCC;
 }
 
@@ -72,7 +79,6 @@ h1{
   font-size:2.5em;
   line-height: 1em;
   font-weight:300;
-  float:left;
 }
 
 h2 {
@@ -124,7 +130,7 @@ dt {
 #cv                 { background-color: rgba(0, 152, 213, 0.4);   }
 #blog               { background-color: rgba(40, 88, 69, 0.4);    }
 #location           { background-color: rgba(0, 152, 213, 0.4);   }
-
+#music              { background-color: rgba(234, 115, 0, 0.4);}
 
 #experience .boxtitle { background-color: rgba(0,0,0, 0.5); }
 #projects .boxtitle { background-color: rgba(0, 152, 213, 0.4);   }
