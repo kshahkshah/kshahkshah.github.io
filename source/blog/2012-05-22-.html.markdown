@@ -1,0 +1,11 @@
+---
+title: 'Tufte on Clutter'
+date: '2012-05-22'
+tags:
+- tufte
+- design
+---
+
+<blockquote class='long'>Confusion and clutter are failures of design, not attributes of information. and so the point is to find design strategies that reveal detail and complexity - rather than to fault the data for an excess of complication. Or, worse, to fault viewers for a lack of understanding.</blockquote>
+
+<div class='attribution'>Edward Tufte - <em>Envisioning Information</em><span></span></div>

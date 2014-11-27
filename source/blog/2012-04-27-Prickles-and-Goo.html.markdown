@@ -1,0 +1,10 @@
+---
+title: Prickles and Goo
+date: '2012-04-27'
+tags:
+- Alan Watts
+- philosophy
+---
+
+<p>[youtube http://www.youtube.com/watch?v=XXi_ldNRNtM]</p>
+<p>The Zen of Alan Watts is wonderfully visualized here by Trey Parker and Matt Stone. I&#8217;ve been trying to write now for two weeks after having more or less reset my online presence. This feels like a good start which provides some context. More soon.</p>

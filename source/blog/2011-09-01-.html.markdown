@@ -1,0 +1,10 @@
+---
+title: 'Missing 3'
+date: '2011-09-01'
+tags:
+- missing
+---
+
+Bad Import from tumblr to Wordpress to a static blog, who'd have thunk it!
+
+<p>I didn&#8217;t draw the sampling connection on this for far too long :)</p>

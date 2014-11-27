@@ -1,0 +1,10 @@
+---
+title: "What's Easy"
+date: '2013-06-10'
+tags:
+- quotes
+---
+
+<blockquote class='medium'>The show is easy when there aren&#8217;t real feelings behind it</blockquote>
+
+<div class='attribution'>Eddie Huang&#8217;s Fresh off the Boat</div>

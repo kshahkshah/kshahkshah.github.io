@@ -1,0 +1,8 @@
+---
+title: 'Missing 2'
+date: '2011-06-18'
+tags:
+- missing
+---
+
+Bad Import from tumblr to Wordpress to a static blog, who'd have thunk it!

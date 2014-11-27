@@ -46,7 +46,7 @@ activate :blog do |blog|
   # Matcher for blog source files
   blog.sources = "/{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
-  blog.layout = "blog"
+  blog.layout = "blog-post"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = "{year}.html"

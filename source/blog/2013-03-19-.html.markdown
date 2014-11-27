@@ -1,0 +1,12 @@
+---
+title: '_why'
+date: '2013-03-19'
+tags:
+- quotes
+- hacking
+- design
+---
+
+<blockquote class='medium'>when you don&#8217;t create things, you become defined by your tastes rather than ability. your tastes only narrow &amp; exclude people. so create.</blockquote>
+
+<div class='attribution'> why the lucky stiff</div>

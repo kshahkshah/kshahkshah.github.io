@@ -1,0 +1,9 @@
+---
+title: 'American Tune'
+date: '2014-08-27'
+tags:
+- music
+---
+
+[youtube http://www.youtube.com/watch?v=vBqCpd31JPA?feature=oembed&w=500&h=281]
+<p>We come in the age&#8217;s most uncertain hour and sing an American tune</p><div class="attribution">(<span>Source:</span> <a href="https://www.youtube.com/">https://www.youtube.com/</a>)</div>

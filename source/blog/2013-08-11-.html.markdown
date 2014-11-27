@@ -1,0 +1,10 @@
+---
+title: 'Bezos'
+date: '2013-08-11'
+tags:
+- quotes
+---
+
+<blockquote class='long'>If everything you do needs to work on a three-year time horizon, then you’re competing against a lot of people. But if you’re willing to invest on a seven-year time horizon, you’re now competing against a fraction of those people, because very few companies are willing to do that. Just by lengthening the time horizon, you can engage in endeavors that you could never otherwise pursue. At Amazon we like things to work in five to seven years. We’re willing to plant seeds, let them grow—and we’re very stubborn.</blockquote>
+
+<div class='attribution'>Jeff Bezos, 2011 NYTimes Interview</div>
