@@ -1,0 +1,21 @@
+<% wrap_layout :layout do %>
+  <div class="box grid-parent" id="title">
+    <div class="content grid-100">
+      <a href="/" alt="kunalashah.com"><h1>Kunal Shah</h1></a>
+    </div>
+  </div>
+
+  <div class="grid-parent box collapse" id='contact'>
+    <a href="mailto:me@kunalashah.com">
+      <div class="grid-33 tablet-grid-33 mobile-grid-33 shortbox dkred" id='email'><h3>email</h3></div>
+    </a>
+    <a href="https://github.com/whistlerbrk">
+      <div class="grid-33 tablet-grid-33 mobile-grid-33 shortbox ltgrey" id='github'><h3>github</h3></div>
+    </a>
+    <a href="/blog">
+      <div class="grid-33 tablet-grid-33 mobile-grid-33 shortbox ltblue" id='linkedin'><h3>blog</h3></div>
+    </a>
+  </div>
+
+  <%= yield %>
+<% end %>
