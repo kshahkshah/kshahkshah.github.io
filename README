@@ -1,0 +1,3 @@
+Don't know why I'd keep this, but if you every need to migrate this again
+
+Dir.glob("*.html.erb").map {|fn| File.rename(fn, fn.gsub('-.html.erb',"-" + ActiveSupport::Inflector.parameterize(File.read(fn).split("\n").select{|l|l.match(/title: /)}.first.split(": ").last.gsub("'",'').gsub("\"",''))  +".html.erb") ) }

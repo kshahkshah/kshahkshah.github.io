@@ -5,6 +5,6 @@ date: 2014-11-25
 title: Blog Moving Here
 ---
 
-### Hello World ###
+### Hello World
 
 I blog at blog.kunalashah.com and soulfood.kunalashah.com, but I'll be moving my content here.
