@@ -5,6 +5,6 @@ date: 2014-11-25
 title: Blog Moving Here
 ---
 
-### Hello World
+### Hello New World
 
-I blog at blog.kunalashah.com and soulfood.kunalashah.com, but I'll be moving my content here.
+I've migrated my blog here! I've switched out of wordpress/tumblr/etc and am permanently hosting my own content from now on. Credit to projects <a href="http://tumblr2wordpress.benapps.net">tumblr2wordpress</a> and <a href="https://github.com/mdb/wp2middleman">wp2mm</a> for a bunch of the bulk of the migration. The rest was manually done and credit goes to time and regex'ing.
