@@ -165,6 +165,7 @@ dt {
 .orange        { background-color: rgba(234, 115, 0, 0.4);}
 .dkgreen       { background-color: rgba(40, 88, 69, 0.4); }
 .purple        { background-color: rgba(160, 99, 121, 0.5); }
+.yellow        { background-color: rgba(255, 243, 109, 0.5); }
 
 .article {
   margin: 2em 0;
