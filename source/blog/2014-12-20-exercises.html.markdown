@@ -1,7 +1,7 @@
 ---
 title: Some Code Exercises
 date: 2014-12-20 19:42 UTC
-tags:
+tags: code
 ---
 
 I've put some [code exercises on GitHub](http://github.com/whistlerbrk/exercises). They are the absolute basics; data structures for graphs and sorting algorithms. The stuff you would learn if you formally studied Computer Science - which I did not. In the end, a very worthwhile endeavour.
