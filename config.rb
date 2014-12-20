@@ -32,7 +32,7 @@
 # Helpers
 ###
 
-# Directory Indexes, e.g. cv.html -> /cv 
+# Directory Indexes, e.g. cv.html -> /cv
 activate :directory_indexes
 
 # Automatic image dimensions on image_tag helper
@@ -81,8 +81,13 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
 # Build-specific configuration
 configure :build do
+  activate :syntax
+
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
