@@ -1,6 +1,6 @@
 ---
 title: Fun with git & Middleman
-date: 2014-12-21 01:00 GMT
+date: 2014-12-22 01:00 UTC
 tags: code, meta
 ---
 
