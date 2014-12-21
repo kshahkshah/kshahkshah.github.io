@@ -11,7 +11,7 @@ body {
   line-height:17px;
 }
 
-div,ul,ol,li,p,dd,dt,dl,h1,h2,h3,h4,h5,h6 {
+div,p,dd,dt,dl,h1,h2,h3,h4,h5,h6 {
   font-size:1em;
   font-style:normal;
   font-weight:300;
@@ -20,6 +20,11 @@ div,ul,ol,li,p,dd,dt,dl,h1,h2,h3,h4,h5,h6 {
   list-style-type:none;
   background-repeat:no-repeat;
   background-position:0 0;
+}
+
+pre {
+  padding:1em;
+  line-height: 1.2em;
 }
 
 a, a:visited{text-decoration:none; color:rgba(0, 152, 213, 1);}
@@ -66,15 +71,17 @@ a:hover .tiledbox, a:hover .shortbox {
 .footer {
   border-top: 1px solid rgba(0,0,0,0.3);
   background-color: rgba(0,0,0,0.8);
+
+  ul,ol {
+    list-style:none;
+    padding: 1em 0;
+  }
 }
 .footer-box {
   padding:1em;
   line-height:1em;
   float:left;
   height:100%;
-}
-.footer-box ol {
-  padding: 1em 0;
 }
 
 #blog-title {
@@ -139,7 +146,7 @@ dd ul {
 }
 
 li{
- margin:0 0 0.5em 0; 
+ margin:0 0 0.5em 0;
 }
 
 dd {
@@ -169,5 +176,4 @@ dt {
 
 .article {
   margin: 2em 0;
-  line-height: 2em;
 }
