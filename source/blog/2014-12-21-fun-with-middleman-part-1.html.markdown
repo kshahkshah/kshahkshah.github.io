@@ -33,3 +33,5 @@ bundle exec middleman build
 `rbenv` manages my Rubies for my deployment user (e.g. www-data). `rbenv` can be used to manage rubies system wide, however it is rightly discouraged. Since the git user is executing the receive hook, above (just a shell script) it needs access to the `bundle` command.
 
 Just force it to work with above. Onwards to scheduling.
+
+Update! Lovely, this feature already exists as I'd wanted to implement it - using YAML front matter, so I'm going to take a stab at the embedding instead.
