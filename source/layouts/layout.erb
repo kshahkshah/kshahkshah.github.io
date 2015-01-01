@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
 
-    <%= @content_for_atom %>
+    <%= feed_tag :atom, "/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag "normalize", "unsemantic-grid-responsive-tablet", "all", "code" %>
     <%= javascript_include_tag  "all" %>
   </head>

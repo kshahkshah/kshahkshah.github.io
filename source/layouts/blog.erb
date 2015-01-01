@@ -1,5 +1,4 @@
 <% @title ||= current_article.title unless current_article.nil? %>
-<% @content_for_atom = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
 
 <% wrap_layout :page do %>
   <%= yield %>
