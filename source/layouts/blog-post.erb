@@ -2,6 +2,9 @@
   <div class="grid-parent box collapse" id='article-<%= current_article.date %>'>
     <div class='grid-100 content'>
       <h2><%= current_article.title %> <span><%= current_article.date.strftime('%B %e, %Y') %></span></h2>
+      <div class='tags'>
+        in <%= current_article.tags.map{ |tag| link_to tag, tag_path(tag) }.join(', ') %>
+      </div>
       <div class='article'>
       <%= yield %>
       </div>
