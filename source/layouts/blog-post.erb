@@ -1,3 +1,12 @@
+<% @title = current_article.title %>
+<% set_meta_tags description: current_article.summary, "og:description": current_article.summary %>
+<% set_meta_tags keywords: current_article.tags.join(', ') %>
+<% set_meta_tags "twitter:creator": '@whistlerbrk' %>
+
+<% image_lead_path = get_image_lead(current_article.body) %>
+<% set_meta_tags "twitter:image:src": image_lead_path %>
+<% set_meta_tags "og:image": image_lead_path %>
+
 <% wrap_layout :blog do %>
   <div class="grid-parent box collapse" id='article-<%= current_article.date %>'>
     <div class='grid-100 content'>

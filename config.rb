@@ -31,6 +31,14 @@
 ###
 # Helpers
 ###
+helpers do 
+  def get_image_lead(body)
+    parsed_body = Nokogiri::HTML.parse(body)
+    lead_image  = parsed_body.css('img').first
+
+    lead_image ? lead_image['src'] : 'http://kunalashah.com/images/greatwave.jpg'
+  end
+end
 
 # Directory Indexes, e.g. cv.html -> /cv
 activate :directory_indexes
@@ -87,6 +95,8 @@ set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 activate :syntax
+
+activate :meta_tags
 
 # Build-specific configuration
 configure :build do
