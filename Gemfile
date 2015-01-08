@@ -8,6 +8,8 @@ gem 'middleman-syntax'
 
 gem 'middleman-meta-tags'
 
+gem 'middleman-automatic-clowncar', git: 'git@github.com:Octo-Labs/middleman-automatic-clowncar.git'
+
 gem 'rouge'
 
 gem 'redcarpet'

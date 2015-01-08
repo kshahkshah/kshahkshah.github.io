@@ -94,14 +94,29 @@ set :images_dir, 'images'
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 
+activate :asset_hash
+
 activate :syntax
 
 activate :meta_tags
 
 activate :gzip
 
+activate :automatic_clowncar,
+  :sizes => {
+    :small => 200,
+    :medium => 400,
+    :large => 600
+  },
+  :namespace_directory => %w(photos),
+  :filetypes => [:jpg, :jpeg, :png]
+
+activate :asset_host
+set :asset_host, 'http://localhost:4567'
+
 # Build-specific configuration
 configure :build do
+  set :asset_host, 'http://kunalashah.com'
 
   # For example, change the Compass output style for deployment
   activate :minify_css
