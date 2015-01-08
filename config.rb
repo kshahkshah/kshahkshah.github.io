@@ -98,6 +98,8 @@ activate :syntax
 
 activate :meta_tags
 
+activate :gzip
+
 # Build-specific configuration
 configure :build do
 
