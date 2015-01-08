@@ -104,9 +104,10 @@ activate :gzip
 
 activate :automatic_clowncar,
   :sizes => {
-    :small => 200,
-    :medium => 400,
-    :large => 600
+    :small => 320,
+    :medium => 480,
+    :large => 640,
+    :huge => 940
   },
   :namespace_directory => %w(photos),
   :filetypes => [:jpg, :jpeg, :png]
