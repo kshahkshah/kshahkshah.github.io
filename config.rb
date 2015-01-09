@@ -32,7 +32,7 @@
 # Helpers
 ###
 helpers do 
-  def clean_description(summary)
+  def generate_description(summary)
     summary = Nokogiri::HTML.parse(summary)
     summary.xpath("//text()").to_s.gsub("\n", '. ')
   end
