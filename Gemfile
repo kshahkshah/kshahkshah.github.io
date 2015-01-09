@@ -6,9 +6,9 @@ gem 'middleman-blog'
 
 gem 'middleman-syntax'
 
-gem 'middleman-meta-tags'
+gem 'middleman-meta-tags', git: 'git@github.com:whistlerbrk/middleman-meta-tags.git'
 
-gem 'middleman-automatic-clowncar', git: 'git@github.com:Octo-Labs/middleman-automatic-clowncar.git'
+gem 'middleman-automatic-clowncar', git: 'git@github.com:whistlerbrk/middleman-automatic-clowncar.git'
 
 gem 'rouge'
 

@@ -1,6 +1,6 @@
 GIT
-  remote: git@github.com:Octo-Labs/middleman-automatic-clowncar.git
-  revision: 42cdb9618be51d59fd0ed43c0b32b4c6808d8791
+  remote: git@github.com:whistlerbrk/middleman-automatic-clowncar.git
+  revision: 96ab55682823997b6109964677d52f010e72fda6
   specs:
     middleman-automatic-clowncar (0.0.4)
       fastimage (~> 1.6.0)
@@ -8,6 +8,13 @@ GIT
       middleman-sprockets (> 3.2.0)
       mini_magick (~> 3.7.0)
       sass (~> 3.4.0)
+
+GIT
+  remote: git@github.com:whistlerbrk/middleman-meta-tags.git
+  revision: 111139e445fa19077015319239af2caaa94065d5
+  specs:
+    middleman-meta-tags (0.1.0)
+      middleman-core (>= 3.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -90,8 +97,6 @@ GEM
       rack-test (~> 0.6.2)
       thor (>= 0.15.2, < 2.0)
       tilt (~> 1.4.1, < 2.0)
-    middleman-meta-tags (0.1.0)
-      middleman-core (>= 3.0.0)
     middleman-sprockets (3.4.1)
       middleman-core (>= 3.3)
       sprockets (~> 2.12.1)
@@ -155,7 +160,7 @@ DEPENDENCIES
   middleman
   middleman-automatic-clowncar!
   middleman-blog
-  middleman-meta-tags
+  middleman-meta-tags!
   middleman-syntax
   nokogiri
   redcarpet
