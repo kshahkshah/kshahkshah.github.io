@@ -40,8 +40,7 @@ helpers do
   def get_image_lead(body)
     parsed_body = Nokogiri::HTML.parse(body)
     lead_image  = parsed_body.css('img').first
-
-    lead_image ? lead_image['src'] : 'http://kunalashah.com/images/greatwave.jpg'
+    lead_image ? lead_image['src'] : image_path('greatwave.jpg')
   end
 end
 
