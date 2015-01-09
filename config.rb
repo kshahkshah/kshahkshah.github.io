@@ -32,6 +32,11 @@
 # Helpers
 ###
 helpers do 
+  def clean_description(summary)
+    summary = Nokogiri::HTML.parse(summary)
+    summary.xpath("//text()").to_s.gsub("\n", '. ')
+  end
+
   def get_image_lead(body)
     parsed_body = Nokogiri::HTML.parse(body)
     lead_image  = parsed_body.css('img').first

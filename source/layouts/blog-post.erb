@@ -1,5 +1,5 @@
 <% @title = current_article.title %>
-<% set_meta_tags "description" => current_article.summary, "og:description" => current_article.summary %>
+<% set_meta_tags "description" => clean_description(current_article.summary), "og:description" => clean_description(current_article.summary) %>
 <% set_meta_tags "keywords" => current_article.tags.join(', ') %>
 <% set_meta_tags "twitter:creator" => '@whistlerbrk' %>
 
