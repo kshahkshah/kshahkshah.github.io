@@ -23,6 +23,9 @@
     <%= feed_tag :atom, "/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag "normalize", "unsemantic-grid-responsive-tablet", "all", "code" %>
     <%= javascript_include_tag  "all" %>
+   <style type="text/css" media="all">
+      object{ width:100%; }
+    </style>
   </head>
   <body class="<%= page_classes %>">
     <div id="container" class="grid-container grid-80 prefix-10 suffix-10 tablet-grid-90 tablet-prefix-5 tablet-suffix-5 mobile-grid-90 mobile-prefix-5 mobile-suffix-5">
