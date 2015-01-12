@@ -1,0 +1,13 @@
+protocol: imap
+receiver: 'stream@kunalashah.com'
+senders:  'me@kunalashah.com'
+interval: 20
+
+preprocessors:
+  - key: 'autotag-subject'
+
+mailman:
+  server: 'imap.gmail.com'
+  port: 993
+  ssl: true
+  username: 'stream@kunalashah.com'
