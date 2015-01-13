@@ -4,6 +4,9 @@
 ## Uncomment and set this to only include directories you want to watch
 directories %w(source)
 
+interactor :off
+logger device: 'guard.log'
+
 ## Uncomment to clear the screen before every task
 # clearing :on
 
