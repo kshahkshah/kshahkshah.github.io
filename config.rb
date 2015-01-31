@@ -37,10 +37,22 @@ helpers do
     summary.xpath("//text()").to_s.gsub("\n", '. ')
   end
 
-  def get_image_lead(body)
-    parsed_body = Nokogiri::HTML.parse(body)
-    lead_image  = parsed_body.css('img').first
-    lead_image ? lead_image['src'] : image_path('greatwave.jpg')
+  def get_image_lead(article)
+    lead_image = nil
+
+    begin
+      filename = article.metadata[:page]["attachments"].select{|k,v| v["maintype"]=="image"}.map{|k,v|v}.first["filename"]
+      lead_image = [asset_host, 'photos', filename].join('/')
+    rescue
+    end
+
+    unless lead_image
+      parsed_body = Nokogiri::HTML.parse(article.body)
+      lead_image_el  = parsed_body.css('img').first
+      lead_image = lead_image_el['src'] if lead_image_el
+    end
+
+    lead_image ? lead_image : image_path('greatwave.jpg')
   end
 end
 
