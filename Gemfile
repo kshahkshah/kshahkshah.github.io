@@ -16,7 +16,7 @@ gem 'm2fm-autotag-subject', git: 'git@github.com:whistlerbrk/m2fm-autotag-subjec
 
 gem 'm2fm-automatic-clowncar', git: 'git@github.com:whistlerbrk/m2fm-automatic-clowncar.git', require: false
 
-gem 'm2fm-automatic-embed', git: 'git@github.com:whistlerbrk/m2fm-automatic-embeds.git', require: false
+gem 'm2fm-automatic-embeds', git: 'git@github.com:whistlerbrk/m2fm-automatic-embeds.git', require: false
 
 gem 'rouge'
 
