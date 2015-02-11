@@ -1,0 +1,33 @@
+---
+:from: Kunal Shah <me@kunalashah.com>
+:to: '"stream@kunalashah.com" <stream@kunalashah.com>'
+:received: !ruby/object:DateTime 2015-02-10 23:43:46.000000000 -05:00
+:subject: monitoring with eye
+:attachments: {}
+:tags:
+- code
+:title: monitoring with eye
+:filename: 2015-02-10-monitoring-with-eye.html.erb
+:filepath: "/var/www/kunalashah.com/source/blog/2015-02-10-monitoring-with-eye.html.erb"
+---
+I'm setting up some process monitoring with Eye for Mail2FrontMatter.<div><br></div>
+<div>
+<div><font face="monospace, monospace">Eye.config do</font></div>
+<div><font face="monospace, monospace">  logger '~/site/log/eye.log'</font></div>
+<div><font face="monospace, monospace">end</font></div>
+<div><font face="monospace, monospace"><br></font></div>
+<div><font face="monospace, monospace">Eye.application 'mail2frontmatter' do</font></div>
+<div><font face="monospace, monospace">  working_dir '~/site'</font></div>
+<div><font face="monospace, monospace"><br></font></div>
+<div><font face="monospace, monospace">  check :cpu, every: 10.seconds, below: 100, times: 3</font></div>
+<div><font face="monospace, monospace"><br></font></div>
+<div><font face="monospace, monospace">  process :mail2frontmatter do |p|</font></div>
+<div><font face="monospace, monospace">    check :memory, every: 20.seconds, below: 64.megabytes, times: 3</font></div>
+<div><font face="monospace, monospace">    pid_file '~/site/tmp/pids/mail2frontmatter.pid'</font></div>
+<div><font face="monospace, monospace">    start_command 'bundle exec mail2frontmatter -d'</font></div>
+<div><font face="monospace, monospace">    stop_signals [:QUIT, 2.seconds, :TERM, 1.seconds, :KILL]</font></div>
+<div><font face="monospace, monospace">  end</font></div>
+<div><font face="monospace, monospace">end</font></div>
+</div>
+<div><br></div>
+<div>It's a straightforward framework</div>
