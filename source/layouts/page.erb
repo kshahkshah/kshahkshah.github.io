@@ -1,21 +1,13 @@
 <% wrap_layout :layout do %>
-  <div class="box grid-parent" id="title">
-    <div class="content grid-100">
-      <a href="/" alt="kunalashah.com"><h1>Kunal Shah</h1></a>
+  <div id='header'>
+    <div id='banner'>
+      <a href="/" alt="kunalashah.com" id='home'><h1>Kunal Shah</h1></a>
     </div>
+    <navigation>
+      <div class='navbox' id='blog-nav-link'><a href="/blog">blog</a></div>
+      <div class='navbox' id='cv-nav-link'><a href="/cv">cv</a></div>
+      <div class='navbox' id='contact-nav-link'><a href="/contact">contact</a></div>
+    </navigation>
   </div>
-
-  <div class="grid-parent box collapse" id='contact'>
-    <a href="/blog">
-      <div class="grid-33 tablet-grid-33 mobile-grid-33 shortbox dkred" id='linkedin'><h3>blog</h3></div>
-    </a>
-    <a href="/cv">
-      <div class="grid-33 tablet-grid-33 mobile-grid-33 shortbox ltgrey" id='cv'><h3>cv</h3></div>
-    </a>
-    <a href="/contact">
-      <div class="grid-33 tablet-grid-33 mobile-grid-33 shortbox ltblue" id='contact'><h3>contact</h3></div>
-    </a>
-  </div>
-
   <%= yield %>
 <% end %>

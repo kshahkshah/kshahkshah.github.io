@@ -14,8 +14,8 @@
   })
 %>
 
-<% wrap_layout :blog do %>
-  <div class="grid-parent box collapse" id='article-<%= current_article.date %>'>
+<% wrap_layout :page do %>
+  <div class="box collapse" id='article-<%= current_article.date %>'>
     <div class='grid-100 content'>
       <h2><%= current_article.title %> <span><%= current_article.date.strftime('%B %e, %Y') %></span></h2>
       <%- if current_article.tags.any? %>

@@ -1,17 +1,44 @@
 @charset "utf-8";
 
+$red: #f7977a;
+$red-orange: #f9ad81;
+$yellow-orange: #fdc68a;
+$yellow: #fff79a;
+$pea-green: #c4df9b;
+$yellow-green: #a2d39c;
+$green: #82ca9d;
+$green-cyan: #7bcdc8;
+$cyan: #6ecff6;
+$cyan-blue: #7ea7d8;
+$blue: #8493ca;
+$blue-violet: #8882be;
+$violet: #a187be;
+$violet-magenta: #bc8dbf;
+$magenta: #f49ac2;
+$magenta-red: #f6989d;
+
+html {
+  background: url('/images/waveofthefuture.jpg') no-repeat fixed center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   margin:0;
   padding:0;
-  color:#FFF;
-  font-size:13px;
-  font-family:"Muli", "Helvetica Neue",Arial,sans-serif;
-  font-weight:300;
-  background:#000 url('/images/greatwave.jpg') 0 0 no-repeat;
-  line-height:17px;
+  color:#CDCDCD;
+  font-family:"Avenir Next", "Helvetica Neue",Arial,sans-serif;
+  font-size:14px;
+  font-weight: 300;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
-div,p,dd,dt,dl,h1,h2,h3,h4,h5,h6 {
+a, a:visited { text-decoration:none; color: $cyan; }
+a:hover { text-decoration:underline; }
+
+p,dd,dt,dl {
   font-size:1em;
   font-style:normal;
   font-weight:300;
@@ -22,16 +49,58 @@ div,p,dd,dt,dl,h1,h2,h3,h4,h5,h6 {
   background-position:0 0;
 }
 
+// DOCUMENT STRUCTURE
+#container {
+  background-color: rgba(0,0,0,0.85);
+  position: absolute;
+  width: 100%;
+}
+
+.content { margin: 0 auto; }
+#main { min-height: 80vh; }
+
+#header {
+  height: 60px;
+
+  #banner {
+    float:left;
+    a:hover {
+      h1 { color: #FFF; }
+      text-decoration: none;
+    }
+  }
+  navigation {
+    float: left;
+    line-height:60px;
+    margin-left:40px;
+
+    .navbox {
+      text-align:center;
+      display:inline-block;
+      margin:0 10px;
+
+      a, a:visited {
+        color: #CDCDCD;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #FFF;
+      }
+
+      &#home-nav-link    {a{border-bottom:2px solid $red-orange;     &:hover{border-bottom: 2px solid #FFF;}}}
+      &#blog-nav-link    {a{border-bottom:2px solid $cyan-blue;      &:hover{border-bottom: 2px solid #FFF;}}}
+      &#cv-nav-link      {a{border-bottom:2px solid $violet-magenta; &:hover{border-bottom: 2px solid #FFF;}}}
+      &#contact-nav-link {a{border-bottom:2px solid $pea-green;      &:hover{border-bottom: 2px solid #FFF;}}}
+    }
+  }
+}
+
 pre {
   padding:1em;
   line-height: 1.2em;
 }
 
-a, a:visited{text-decoration:none; color:rgba(0, 152, 213, 1);}
-a:hover{text-decoration:underline; color:rgba(0, 152, 213, 1);}
-
 .box {
-  background-color: rgba(0,0,0,0.8);
   overflow:hidden;
   margin:20px 0;
 }
@@ -40,25 +109,15 @@ a:hover{text-decoration:underline; color:rgba(0, 152, 213, 1);}
   margin:-20px 0 20px 0;
 }
 
-.tiledbox {
-  float:left;
-  padding:20px;
-  line-height:50px;
-  text-align: center;
-}
-
-a .tiledbox, a:visited .tiledbox, a .shortbox, a:visited .shortbox {
+a .shortbox, a:visited .shortbox {
   text-decoration:none; color:#FFF;
 }
-a:hover .tiledbox, a:hover .shortbox {
+a:hover .shortbox {
   text-decoration:none; color:#FFF;
 }
 
 .boxtitle {
   padding:2em 2em 0 2em;
-}
-.content {
-  padding:2em;
 }
 
 .shortbox {
@@ -68,9 +127,11 @@ a:hover .tiledbox, a:hover .shortbox {
   text-align: center;
   height:100%;
 }
-.footer {
+footer {
   border-top: 1px solid rgba(0,0,0,0.3);
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.95);
+  position: absolute;
+  width: 100%;
 
   ul,ol {
     list-style:none;
@@ -78,9 +139,7 @@ a:hover .tiledbox, a:hover .shortbox {
   }
 }
 .footer-box {
-  padding:1em;
   line-height:1em;
-  float:left;
   height:100%;
 }
 
@@ -88,24 +147,23 @@ a:hover .tiledbox, a:hover .shortbox {
   text-align: center;
 }
 
-#subtitle {
-  margin-top:1em;
-  font-size:1.25em;
-  font-weight:400;
+h1{
   color:#CCC;
+  font-size:36px;
+  font-weight:700;
+  margin: 0 0 0.25em 0;
+}
+#subtitle {
+  font-weight: 300;
 }
 
-h1{
-  color:#EEE;
-  font-size:2.5em;
-  line-height: 1em;
-  font-weight:300;
-}
 
 h2 {
   color:#DDD;
   font-size:1.75em;
   font-weight:300;
+  margin-top: 1.25em;
+  margin-bottom: 0;
 }
 
 h2 span {
@@ -115,17 +173,18 @@ h2 span {
   font-weight:300;
 }
 
-
 h3, dt{
   color:#DDD;
   font-size:1.375em;
   font-weight:300;
 }
+
 h4 {
   font-size:1em;
   color:#333;
   font-weight:300;
 }
+
 dd > h4 {
   color:#B5B5B5;
 }
@@ -160,25 +219,41 @@ dt {
   margin:0 0 0.5em 0;
 }
 
-/*#humblesuggestions  { background-color: rgba(160, 99, 121, 0.5);  }*/
-.dkblue        { background-color: rgba(59, 89, 182, 0.4); }
-.ltblue        { background-color: rgba(64, 153, 255, 0.4); }
-.dkred         { background-color: rgba(216, 74, 56, 0.4); }
-.ltgrey        { background-color: rgba(200, 200, 200, 0.4); }
-.dkgrey        { background-color: rgba(200, 200, 200, 0.1); }
-.brightgreen   { background-color: rgba(0, 194, 53, 0.4); }
-.ltred         { background-color: rgba(246, 95, 82, 0.4); }
-.teal          { background-color: rgba(0, 152, 213, 0.4); }
-.orange        { background-color: rgba(234, 115, 0, 0.4);}
-.dkgreen       { background-color: rgba(40, 88, 69, 0.4); }
-.purple        { background-color: rgba(160, 99, 121, 0.5); }
-.yellow        { background-color: rgba(255, 243, 109, 0.5); }
+.bar-link {
+  display:inline-block;
+  color: #CDCDCD;
+  margin: 0em 0.5em 0.25em 0em;
+  font-size: 1.25em;
+
+  a, a:visited {
+    color: #CDCDCD;
+    text-decoration:none;
+  }
+}
+
+.bar-header {
+  display:inline-block;
+  text-align: right; 
+  width:100px;
+  margin-right:25px;
+}
+
+#github { border-bottom: 2px solid $cyan-blue; &:hover { border-bottom: 2px solid #FFF; }}
+#contact { border-bottom: 2px solid $pea-green; &:hover { border-bottom: 2px solid #FFF; }}
+#linkedin { border-bottom: 2px solid $violet-magenta; &:hover { border-bottom: 2px solid #FFF; }}
+#twitter { border-bottom: 2px solid $blue; &:hover { border-bottom: 2px solid #FFF; }}
+#cv { border-bottom: 2px solid $yellow; &:hover { border-bottom: 2px solid #FFF; }}
+#photos { border-bottom: 2px solid $red-orange; &:hover { border-bottom: 2px solid #FFF; }}
+#blog { border-bottom: 2px solid $green-cyan; &:hover { border-bottom: 2px solid #FFF; }}
+#upontheboard { border-bottom: 2px solid $magenta-red; &:hover { border-bottom: 2px solid #FFF; }}
+#salttotaste { border-bottom: 2px solid $yellow-green; &:hover { border-bottom: 2px solid #FFF; }}
 
 .tags {
   margin-top: 0.25em;
 }
 .article {
   margin: 2em 0;
+  min-height: 600px;
 
 
   blockquote {
@@ -208,5 +283,45 @@ dt {
     &:before {
       content: "\2014";
     }
+  }
+}
+
+
+// these need to go at the end so they are allowed to override
+
+@media (max-width: 400px) {
+  .bar-header {
+    text-align: left;
+    display:block;
+  }
+  .content {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 767px) {
+  .content {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content {
+    padding: 30px;
+  }
+  .footer-box {
+    width: 33%;
+    float:left;
+  }
+}
+
+@media (min-width: 1025px) {
+  .content {
+    padding: 3em;
+    max-width: 1000px;
+  }
+  .footer-box {
+    width: 33%;
+    float:left;
   }
 }

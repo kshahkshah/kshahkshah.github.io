@@ -2,12 +2,13 @@
 <html>
   <head>
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <!-- No modern browser? No polyfill for you! This is a personal site not a client site! -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <%= auto_display_meta_tags %>
 
-    <title><%= @title || current_page.data.title || "kshah" %></title>
+    <title><%= @title || current_page.data.title || "Kunal Shah - Examining Patterns" %></title>
     <link rel="shortcut icon" href="/favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <script>
@@ -21,15 +22,48 @@
 
     </script>
     <%= feed_tag :atom, "/feed.xml", title: "Atom Feed" %>
-    <%= stylesheet_link_tag "normalize", "unsemantic-grid-responsive-tablet", "all", "code" %>
+    <%= stylesheet_link_tag "normalize", "all", "code" %>
     <%= javascript_include_tag  "all" %>
-   <style type="text/css" media="all">
+    <style type="text/css" media="all">
       object{ width:100%; }
     </style>
   </head>
-  <body class="<%= page_classes %>">
-    <div id="container" class="grid-container grid-80 prefix-10 suffix-10 tablet-grid-90 tablet-prefix-5 tablet-suffix-5 mobile-grid-90 mobile-prefix-5 mobile-suffix-5">
-      <%= yield %>
+  <body class='<%= page_classes %>'>
+    <div id='container'>
+      <div id='outerContent'>
+        <div class='content' id='main'>
+          <%= yield %>
+        </div>
+      </div>
+      <footer>
+        <div class='content'>
+          <div class='footer-box'>
+            <h5>Recent Articles</h5>
+            <ol>
+              <% blog.articles[0...10].each do |article| %>
+                <li><span><%= article.date.strftime('%b %e') %></span> <%= link_to article.title, article %></li>
+              <% end %>
+            </ol>
+          </div>
+          <div class='footer-box'>
+            <h5>Tags</h5>
+            <ol>
+              <% blog.tags.each do |tag, articles| %>
+                <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+              <% end %>
+            </ol>
+          </div>
+
+          <div class='footer-box'>
+            <h5>By Year</h5>
+            <ol>
+              <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+                <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
+              <% end %>
+            </ol>
+          </div>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
