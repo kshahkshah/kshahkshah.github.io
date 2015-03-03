@@ -19,7 +19,7 @@ $magenta-red: #f6989d;
 
 html {
   // overflow-y: hidden;
-  // height:100%;
+  height:100%;
 }
 
 body {
@@ -335,8 +335,9 @@ dt {
   .bar-header {
     text-align: left;
     display:block;
+    margin-top:0.5em;
   }
-  .bar-link { display:block; margin:1.25em 0; }
+  .bar-link { float:left; clear:both; margin:0.5em 0; }
   .content {
     padding: 10px;
   }
