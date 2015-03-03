@@ -87,6 +87,7 @@ activate :blog do |blog|
   blog.per_page = 10
   # blog.page_link = "page/{num}"
 end
+
 page "/feed.xml", layout: false
 
 # Reload the browser automatically whenever files change
