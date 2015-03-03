@@ -58,6 +58,7 @@ p,dd,dt,dl {
 
 .content { margin: 0 auto; }
 #main { min-height: 80vh; }
+#content{ clear:both; }
 
 #header {
   height: 60px;
@@ -87,9 +88,8 @@ p,dd,dt,dl {
         color: #FFF;
       }
 
-      &#home-nav-link    {a{border-bottom:2px solid $red-orange;     &:hover{border-bottom: 2px solid #FFF;}}}
+      &#about-nav-link    {a{border-bottom:2px solid $red-orange;     &:hover{border-bottom: 2px solid #FFF;}}}
       &#blog-nav-link    {a{border-bottom:2px solid $cyan-blue;      &:hover{border-bottom: 2px solid #FFF;}}}
-      &#cv-nav-link      {a{border-bottom:2px solid $violet-magenta; &:hover{border-bottom: 2px solid #FFF;}}}
       &#contact-nav-link {a{border-bottom:2px solid $pea-green;      &:hover{border-bottom: 2px solid #FFF;}}}
     }
   }
@@ -238,23 +238,50 @@ dt {
   margin-right:25px;
 }
 
+// unused
+// $red
+// $yellow-orange
+// $green
+// $cyan
+// $blue-violet
+// $violet
+// $magenta
+
+#about { border-bottom: 2px solid $red; &:hover { border-bottom: 2px solid #FFF; }}
 #github { border-bottom: 2px solid $cyan-blue; &:hover { border-bottom: 2px solid #FFF; }}
 #contact { border-bottom: 2px solid $pea-green; &:hover { border-bottom: 2px solid #FFF; }}
-#linkedin { border-bottom: 2px solid $violet-magenta; &:hover { border-bottom: 2px solid #FFF; }}
+#m2fm { border-bottom: 2px solid $violet-magenta; &:hover { border-bottom: 2px solid #FFF; }}
 #twitter { border-bottom: 2px solid $blue; &:hover { border-bottom: 2px solid #FFF; }}
-#cv { border-bottom: 2px solid $yellow; &:hover { border-bottom: 2px solid #FFF; }}
+#portfolio { border-bottom: 2px solid $yellow; &:hover { border-bottom: 2px solid #FFF; }}
 #photos { border-bottom: 2px solid $red-orange; &:hover { border-bottom: 2px solid #FFF; }}
 #blog { border-bottom: 2px solid $green-cyan; &:hover { border-bottom: 2px solid #FFF; }}
 #upontheboard { border-bottom: 2px solid $magenta-red; &:hover { border-bottom: 2px solid #FFF; }}
 #salttotaste { border-bottom: 2px solid $yellow-green; &:hover { border-bottom: 2px solid #FFF; }}
 
-.tags {
-  margin-top: 0.25em;
+#articles {
+  .article-preview {
+    margin-bottom:3.25em;
+
+    h2 { 
+      font-size:18px;
+      font-weight:400;
+      a, a:visited { text-decoration:none; color: #CDCDCD;}
+      a:hover { text-decoration:none; color: #FFF;}
+    }
+    span.published {
+      color: #CCC;
+      font-style: italic;
+    }
+    span.tagged {
+      font-size:0.875em;
+      color: #CCC;
+      font-style: italic;
+    }
+  }
 }
 .article {
   margin: 2em 0;
   min-height: 600px;
-
 
   blockquote {
     font-size: 3em;
@@ -289,7 +316,13 @@ dt {
 
 // these need to go at the end so they are allowed to override
 
-@media (max-width: 400px) {
+@media (max-width: 476px) {
+  h1 { font-size:14px; font-weight:300; line-height:30px;}
+  #header { 
+    height:30px;
+    navigation { line-height:30px; float:right;}
+  }
+
   .bar-header {
     text-align: left;
     display:block;
@@ -299,13 +332,19 @@ dt {
   }
 }
 
-@media (min-width: 401px) and (max-width: 767px) {
+@media (min-width: 477px) and (max-width: 999px) {
   .content {
     padding: 20px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1000px) and (max-width: 1095px) {
+  #content {
+    float:right;
+    width: 100%;
+    max-width: 595px;
+    margin-right: 82px;
+  }
   .content {
     padding: 30px;
   }
@@ -315,7 +354,12 @@ dt {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1096px) {
+  #content {
+    float:right;
+    width: 100%;
+    max-width: 595px;
+  }
   .content {
     padding: 3em;
     max-width: 1000px;

@@ -1,5 +1,4 @@
 ---
-layout: blog-post
 tags: meta
 date: 2014-11-25
 title: Blog Moving Here
