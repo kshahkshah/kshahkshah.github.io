@@ -133,6 +133,13 @@ footer {
   position: absolute;
   width: 100%;
 
+  h5 {
+    font-size:1.25em;
+    color:#999;
+    font-weight:300;
+    margin:2em 0 0 0;
+  }
+
   ul,ol {
     list-style:none;
     padding: 1em 0;
@@ -187,12 +194,6 @@ h4 {
 
 dd > h4 {
   color:#B5B5B5;
-}
-
-h5 {
-  font-size:1em;
-  color:#999;
-  font-weight:300;
 }
 
 p {
@@ -282,6 +283,7 @@ dt {
 .article {
   margin: 2em 0;
   min-height: 600px;
+  line-height:1.5em;
 
   blockquote {
     font-size: 3em;
@@ -333,7 +335,7 @@ dt {
 }
 
 @media (min-width: 477px) and (max-width: 999px) {
-  .content {
+  #outerContent {
     padding: 20px;
   }
 }
@@ -345,7 +347,7 @@ dt {
     max-width: 595px;
     margin-right: 82px;
   }
-  .content {
+  #outerContent {
     padding: 30px;
   }
   .footer-box {
@@ -360,8 +362,10 @@ dt {
     width: 100%;
     max-width: 595px;
   }
-  .content {
+  #outerContent {
     padding: 3em;
+  }
+  .content {
     max-width: 1000px;
   }
   .footer-box {
