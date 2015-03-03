@@ -162,6 +162,7 @@ h1{
 }
 #subtitle {
   font-weight: 300;
+  display:block;
 }
 
 
@@ -248,16 +249,16 @@ dt {
 // $violet
 // $magenta
 
-#about { border-bottom: 2px solid $red; &:hover { border-bottom: 2px solid #FFF; }}
-#github { border-bottom: 2px solid $cyan-blue; &:hover { border-bottom: 2px solid #FFF; }}
-#contact { border-bottom: 2px solid $pea-green; &:hover { border-bottom: 2px solid #FFF; }}
-#m2fm { border-bottom: 2px solid $violet-magenta; &:hover { border-bottom: 2px solid #FFF; }}
-#twitter { border-bottom: 2px solid $blue; &:hover { border-bottom: 2px solid #FFF; }}
-#portfolio { border-bottom: 2px solid $yellow; &:hover { border-bottom: 2px solid #FFF; }}
-#photos { border-bottom: 2px solid $red-orange; &:hover { border-bottom: 2px solid #FFF; }}
-#blog { border-bottom: 2px solid $green-cyan; &:hover { border-bottom: 2px solid #FFF; }}
-#upontheboard { border-bottom: 2px solid $magenta-red; &:hover { border-bottom: 2px solid #FFF; }}
-#salttotaste { border-bottom: 2px solid $yellow-green; &:hover { border-bottom: 2px solid #FFF; }}
+#about { border-bottom: 2px solid $red; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
+#github { border-bottom: 2px solid $cyan-blue; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
+#contact { border-bottom: 2px solid $pea-green; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
+#m2fm { border-bottom: 2px solid $violet-magenta; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
+#twitter { border-bottom: 2px solid $blue; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
+#portfolio { border-bottom: 2px solid $yellow; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
+#photos { border-bottom: 2px solid $red-orange; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
+#blog { border-bottom: 2px solid $green-cyan; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
+#upontheboard { border-bottom: 2px solid $magenta-red; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
+#salttotaste { border-bottom: 2px solid $yellow-green; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
 
 #articles {
   .article-preview {
@@ -319,7 +320,8 @@ dt {
 // these need to go at the end so they are allowed to override
 
 @media (max-width: 476px) {
-  h1 { font-size:14px; font-weight:300; line-height:30px;}
+  h1 { font-size:28px; font-weight:700; line-height:30px;}
+  footer { h5 { margin: 1em 0 0 0; } }
   #header { 
     height:30px;
     navigation { line-height:30px; float:right;}
@@ -329,6 +331,7 @@ dt {
     text-align: left;
     display:block;
   }
+  .bar-link { display:block; margin:1.25em 0; }
   .content {
     padding: 10px;
   }
