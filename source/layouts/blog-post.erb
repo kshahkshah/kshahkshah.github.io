@@ -22,7 +22,7 @@
       in <%= current_article.tags.map{ |tag| link_to tag, tag_path(tag) }.join(', ') %>
     </div>
     <%- end %>
-    <div class='article'>
+    <div id='article'>
       <%= yield %>
     </div>
   </div>
