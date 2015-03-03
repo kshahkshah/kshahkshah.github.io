@@ -18,14 +18,19 @@ $magenta: #f49ac2;
 $magenta-red: #f6989d;
 
 html {
+  overflow-y: hidden;
+  height:100%;
+}
+
+body {
+  overflow-y: scroll;
+  height:100%;
   background: url('/images/waveofthefuture.jpg') no-repeat fixed center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
 
-body {
   margin:0;
   padding:0;
   color:#CDCDCD;
