@@ -1,0 +1,37 @@
+---
+layout: layout
+title: Song
+hide_blog: true
+---
+
+<div id='outerQuote' style='position:relative;'>
+  <div id='quote' style='position:absolute; top: 40vh; width: 100%; transform(-50%, -50%); color:#FFF; letter-spacing: 0.035em; font-size:14px; font-family:monospace;'>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) { 
+    // what?! why are you reading this. It probably has a bug, so stop it.
+
+    // just one for now
+    var quotes = [
+      "Where is the madness that you promised me?"
+    ];
+
+    var quoteEl = document.getElementById('quote');
+    var printed = 0;
+
+    quote = "> " + quotes[Math.round(Math.random()*(quotes.length-1))];
+
+    function printQuote() {
+      if (quote.length < printed) {
+        clearInterval(timer);
+      } else {
+        quoteEl.innerText = quote.substring(0, printed);
+        printed++;
+      }
+    }
+
+    var timer = setInterval(function() { printQuote() }, 100);
+  });
+</script>

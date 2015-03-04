@@ -326,6 +326,7 @@ dt {
 
 @media (max-width: 476px) {
   h1 { font-size:28px; font-weight:700; line-height:30px;}
+  h2 span { display:block; padding:0; margin-bottom:0.25em; }
   footer { h5 { margin: 1em 0 0 0; } }
   #header { 
     height:30px;
@@ -344,6 +345,13 @@ dt {
 }
 
 @media (min-width: 477px) and (max-width: 999px) {
+  h2 span { display:block; padding:0; margin-bottom:0.25em; }
+
+  #content {
+    width: 100%;
+    max-width: 595px;
+  }
+
   #outerContent {
     padding: 20px;
   }

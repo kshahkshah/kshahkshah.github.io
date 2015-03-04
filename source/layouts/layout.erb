@@ -31,11 +31,12 @@
   <body class='<%= page_classes %>'>
     <div id='container'>
       <div id='outerContent'>
-        <div class='content' id='main'>
+        <div class='content' id='main' style="<% if current_page.data.hide_blog %>min-height: 100vh;<% end %>">
           <%= yield %>
           <div class="spacer" style="width: 100%; clear: both;">&nbsp;</div>
         </div>
       </div>
+      <% unless current_page.data.hide_blog %>
       <footer>
         <div class='content'>
           <div class='footer-box'>
@@ -54,7 +55,6 @@
               <% end %>
             </ol>
           </div>
-
           <div class='footer-box'>
             <h5>By Year</h5>
             <ol>
@@ -63,8 +63,9 @@
               <% end %>
             </ol>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
+      <% end %>
     </div>
   </body>
 </html>
