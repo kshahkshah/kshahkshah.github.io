@@ -1,0 +1,25 @@
+---
+:from: Kunal Shah <me@kunalashah.com>
+:to: '"stream@kunalashah.com" <stream@kunalashah.com>'
+:received: !ruby/object:DateTime 2015-04-23 13:21:45.000000000 -04:00
+:subject: replacing rails
+:attachments: {}
+:tags:
+- thoughts
+- code
+:title: replacing rails
+:filename: 2015-04-23-replacing-rails.html.erb
+:filepath: "/var/www/kunalashah.com/source/blog/2015-04-23-replacing-rails.html.erb"
+---
+<div>in response to http://madebymany.com/blog/replacing-rails-part-1-lets-go
+</div>
+<div><br></div>
+<div>I've been working on Rails for quite some time. It has also been a larger part of my life than I care to admit. I've been noticing the HN trend of wanting to replace Rails and feel people are starting to see the long-term writing on the wall.</div>
+<div><br></div>
+<div>1. Our apps are becoming more JS heavy and working with the asset pipeline is a pain</div>
+<div><br></div>
+<div>2. Despite Ruby being fun and flexible, it isn't fast. Not having a fast interpreter and having to support the C API hurts us. No plans to get rid of the GIL hurts us. Not having unity behind RubySpec hurt us. Not having concurrency primitives really really hurts us.</div>
+<div><br></div>
+<div>3. We aren't building new Ruby frameworks that are using great frameworks like Celluloid, which are also compatible with 'the Rails' (i.e ActiveRecord or ActionController) preventing easy migration and usage of great gems like devise. This is major.</div>
+<div><br></div>
+<div>So the reasons why we'd choose Rails are starting to slip but there are no better alternatives and that is mostly because of the very very rich gem ecosystem that handles so much for you. </div>
