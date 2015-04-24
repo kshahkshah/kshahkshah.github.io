@@ -265,8 +265,8 @@ dt {
 #upontheboard { border-bottom: 2px solid $magenta-red; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
 #salttotaste { border-bottom: 2px solid $yellow-green; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
 
-#articles {
-  .article-preview {
+#articles, #links {
+  .article-preview, .link-preview {
     margin-bottom:3.25em;
 
     h2 { 
