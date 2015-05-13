@@ -265,8 +265,8 @@ dt {
 #upontheboard { border-bottom: 2px solid $magenta-red; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
 #salttotaste { border-bottom: 2px solid $yellow-green; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
 
-#articles, #links {
-  .article-preview, .link-preview {
+#articles {
+  .article-preview {
     margin-bottom:3.25em;
 
     h2 { 
@@ -321,6 +321,15 @@ dt {
   }
 }
 
+#links {
+  font-size: 16px;
+  line-height: 24px;
+
+  .link-preview {
+    padding:5px 0;
+    a { display:inline-block; width: 20%; }
+  }
+}
 
 // these need to go at the end so they are allowed to override
 
