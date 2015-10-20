@@ -26,7 +26,7 @@ logger device: 'guard.log'
 #
 # and, you'll have to watch "config/Guardfile" instead of "Guardfile"
 
-guard 'middleman' do
+guard 'middleman', run_on_start: true do
   watch(%r{^config.rb})
   watch(%r{^data/.*})
   watch(%r{^source/.*})
