@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rugged', '0.21.4'
+
 gem 'middleman'
 gem 'middleman-blog'
 gem 'middleman-syntax'
