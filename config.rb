@@ -31,7 +31,7 @@
 ###
 # Helpers
 ###
-helpers do 
+helpers do
   def generate_description(summary)
     summary = Nokogiri::HTML.parse(summary)
     summary.xpath("//text()").to_s.gsub("\n", '. ')
@@ -80,7 +80,7 @@ activate :blog do |blog|
 
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
-  
+
 
   # Enable pagination
   blog.paginate = true
@@ -110,6 +110,7 @@ set :images_dir, 'images'
 
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :url_root, 'http://kunalashah.com'
 
 activate :asset_hash
 
@@ -118,6 +119,8 @@ activate :syntax
 activate :meta_tags
 
 activate :gzip
+
+activate :search_engine_sitemap
 
 activate :automatic_clowncar,
   :sizes => {
