@@ -1,63 +1,69 @@
 ---
 layout: page
-title: CV &amp; Portfolio
+title: Portfolio
 hide_blog: true
 ---
 
-<p style='font-style:italic;'>please note: I am in the midst of redoing my portfolio to be visual instead of textual</p>
-
-<div id='content'>
+<div id='content' class='darker'>
   <div id='article'>
-    <a href="http://addsalttotaste.com/"><h3>Salt to Taste</h3></a>
-    <span>2013 - Present</span>
+    <h2>Rails Consulting</h2>
+    <h3>2013 - Present</h3>
+    <p>
+      At the moment I have a few engaged clients I consult for. I principally offer
+      full stack Rails development (but will use any technology or framework desired).
+      This includes often includes architecting, setting up, using and maintaining
+      projects which use multiple coordinated data stores, caches and various job
+      frameworks. Here are some tools I regularly use:
+    </p>
     <ul>
-      <li>Collaborative Recipes</li>
-      <li>Launching soon</li>
+      <li>data: postgres, mysql, redis, memcached, neo4j</li>
+      <li>visualizing it: d3.js, Highcharts, Raphael</li>
+      <li>analyzing it: analytics, ML and NLP work in Octave and libsvm</li>
+      <li>serving it: Varnish, nginx, passenger, unicorn</li>
+      <li>logic for it: Rails, Sinatra, Spree, node.js, express</li>
+      <li>presenting it: React, React Native, jQuery, plain old JavaScript 5, brand new ECMA6</li>
+      <li>...across devices: modernizr, respond.js, bootstrap, unsemantic and my own responsive frameworks</li>
     </ul>
 
-    <a href="http://upontheboard.com/"><h3>Up On The Board</h3></a>
-    <span>2013 - Present</span>
+    <h2>Partner/Lead Engineer, Corre Group</h2>
+    <h3>June 2012 - December 2014</h3>
     <ul>
-      <li>A simple real time bulletin/pinboard/list app.</li>
-      <li>Uses Pusher/React.js/Rails/Postgres/Redis</li>
+      <li>Managing massive amounts of daily, weekly, monthly and yearly time series data</li>
+      <li>Built infrastructure to analyze, impute, and interpolate data</li>
+      <li>Visualization (Highcharts and d3.js) for end users</li>
     </ul>
+    <%= image_tag 'corre.png', width: 550, caption: 'An older example of some of the analytics we did' %>
 
-    <h3>Humble Suggestions</h3>
-    <span>2013</span>
-    <ul>
-      <li>All the time shifting apps we&apos;ve seen recently beg the question: if not now, then when?</li>
-      <li>No longer online - Netflix has taken down their API, so the app no longer works well.</li>
-    </ul>
-
-    <h3>Partner &amp; CTO, Corre Group</h3>
-    <span>SoHo June 2012 - Present</span>
-    <ul>
-      <li>Managing massive amounts of data</li>
-      <li>Built infrastructure for quickly crunching on massive amounts of data quickly</li>
-      <li>Visualizing data for end users</li>
-    </ul>
-
-    <a href="http://status.urtak.com/"><h3>Head of Product, Urtak</h3></a>
-    <span>
+    <h2>Product &amp; Engineering, Urtak</h2>
+    <h3>
       Union Square July 2011 - April 2012 (NYC TechStars 2011)
-    </span>
-    <ul>
-      <li>Architected and implemented statistics, visualizations and analytics</li>
-      <li>Defining metrics and owning product marketing</li>
-      <li>Defining and owning product roadmap</li>
-    </ul>
+    </h3>
+    <p>
+      I was the first engineering hire at Urtak. Urtak built a highly innovative
+      collaborative polling technology with extraordinarily high engagement rates
+      with audiences. Placed below an article and kicked-off by a publications'
+      staff the poll quickly gets richer as users contribute yes/no questions to it.
+    </p>
+    <%= image_tag 'urtak-future.png', width: 550, caption: 'Our designer, Sascha Mombartz, put this together' %>
+    <p>
+      We never quite figured out how to turn it into an ad product but it was
+      quite a journey nonetheless. I did core engineering and pursued building
+      out our statistics and visualizations to better understand and share our data.
+    </p>
+    <%= image_tag 'urtak-analytics.png', width: 550, caption: 'This was an early draft of my analytics dashboard, this poll in particular broke the scales! Had to make them dynamic after that.' %>
 
-    <a href="http://en.wikipedia.org/wiki/Drop.io"><h3>Systems Engineer, drop.io</h3></a>
-    <span>DUMBO February 2010 - November 2010 (acquired by facebook)</span>
+    <a href="http://en.wikipedia.org/wiki/Drop.io"><h2>Systems Engineer, drop.io</h2></a>
+    <h3>DUMBO February 2010 - November 2010 (acquired by facebook)</h3>
     <ul>
       <li>Worked with business, operations and engineering to develop and direct a product roadmap</li>
       <li>Created and owned processes surrounding infrastructure provisioning and deployment</li>
       <li>Developed deployment, branch management, code maintenance, testing, and quality strategies</li>
       <li>Production operations team member</li>
     </ul>
+    <%= image_tag 'dropio.png', width: 550, caption: 'A much older version of the drop.io homepage. Simpler times.' %>
 
-    <a href="http://digitalpulp.com"><h3>Developer, Digital Pulp</h3></a>
-    <span>New York, NY July 2008 - December 2009</span>
+    <a href="http://digitalpulp.com"><h2>Developer, Digital Pulp</h2></a>
+    <h3>New York, NY July 2008 - December 2009</h3>
     <ul>
       <li>Developed, launched and maintained high traffic data driven content management systems</li>
       <li>Built a publishing platform to integrate a major trade magazine with the web</li>
@@ -65,9 +71,11 @@ hide_blog: true
       <li>Worked with and contributed back to open source projects</li>
       <li>Learned test / behavior driven development</li>
     </ul>
+    <%= image_tag 'vnsny.png', width: 550, caption: 'Rails 1.2.3, still standing!' %>
+    <%= image_tag 'cacm.png', width: 550, caption: 'also Rails 1.2.3 and still standing!' %>
 
-    <a href="http://montclare.poly.edu/"><h3>Research Assistant, Protein Engineer</h3></a>
-    <span>Brooklyn, New York 2004-2006</span>
+    <a href="http://montclare.poly.edu/"><h2>Research Assistant, Protein Engineer</h2></a>
+    <h3>Brooklyn, New York 2004-2006</h3>
     <ul>
       <li>Researched nanoscale drug delivery vehicles and copolymers for tissue engineering</li>
       <li>Routinely performed cloning, culturing, expression, purification, and spectroscopy</li>
@@ -76,18 +84,11 @@ hide_blog: true
       <li>Work presented at the American Chemical Society National Conference</li>
     </ul>
 
-    <h3>Webmaster and Creator of SidGames.com</h3>
-    <span>Warren, New Jersey 1998 - 2001</span>
+    <h2>Webmaster and Creator of SidGames.com</h2>
+    <h3>Warren, New Jersey 1998 - 2001</h3>
     <ul>
       <li>A seemingly very long time ago. How I got my start.</li>
       <li>Apparently there is still some record of this on the <a href="http://www.independent.co.uk/arts-entertainment/second-site-empire-building-1116712.html" target="_blank">web</a>.</li>
-    </ul>
-
-    <h3>Hashsassins</h3>
-    <span>January 2013</span>
-    <ul>
-      <li>A twitter mediated game of <a href="http://en.wikipedia.org/wiki/Assassin_(game)">assassins</a> designed to promote interoffice networking.</li>
-      <li>Launched when needed, porting to SMS. Available as <a href="https://github.com/whistlerbrk/hashsassins">open source</a></li>
     </ul>
   </div>
 </div>
