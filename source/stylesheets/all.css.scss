@@ -174,7 +174,7 @@ h1{
 h2 {
   color:#DDD;
   font-size:1.75em;
-  font-weight:300;
+  font-weight:700;
   margin-top: 1.25em;
   margin-bottom: 0;
 }
@@ -264,7 +264,9 @@ dt {
 #blog { border-bottom: 2px solid $green-cyan; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
 #upontheboard { border-bottom: 2px solid $magenta-red; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
 #salttotaste { border-bottom: 2px solid $yellow-green; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
-#bikedb { border-bottom: 2px solid $yellow-orange; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
+#everysinglebike { border-bottom: 2px solid $yellow-orange; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
+#shortinsider { border-bottom: 2px solid $cyan; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
+
 
 #articles {
   .article-preview {
