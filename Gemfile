@@ -4,7 +4,7 @@ gem 'middleman'
 gem 'middleman-blog'
 gem 'middleman-syntax'
 
-gem 'rugged', '0.21.4'
+gem 'rugged'
 gem 'guard'
 gem 'guard-middleman'
 
