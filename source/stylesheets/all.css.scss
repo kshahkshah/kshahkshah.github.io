@@ -17,6 +17,31 @@ $violet-magenta: #bc8dbf;
 $magenta: #f49ac2;
 $magenta-red: #f6989d;
 
+@mixin colored-link-borders {
+  &:nth-child(1) { a { border-bottom: 2px solid $yellow-orange; &:hover{border-bottom: 2px solid #FFF; }}}
+  &:nth-child(2) { a { border-bottom: 2px solid $cyan; &:hover{border-bottom: 2px solid #FFF; }}}
+  &:nth-child(3) { a { border-bottom: 2px solid $blue-violet; &:hover{border-bottom: 2px solid #FFF; }}}
+  &:nth-child(4) { a { border-bottom: 2px solid $violet-magenta; &:hover{border-bottom: 2px solid #FFF; }}}
+  &:nth-child(5) { a { border-bottom: 2px solid $green-cyan; &:hover{border-bottom: 2px solid #FFF; }}}
+  &:nth-child(6) { a { border-bottom: 2px solid $red; &:hover{border-bottom: 2px solid #FFF; }}}
+  &:nth-child(7) { a { border-bottom: 2px solid $green; &:hover{border-bottom: 2px solid #FFF; }}}
+  &:nth-child(8) { a { border-bottom: 2px solid $magenta; &:hover{border-bottom: 2px solid #FFF; }}}
+  &:nth-child(9) { a { border-bottom: 2px solid $yellow; &:hover{border-bottom: 2px solid #FFF; }}}
+  &:nth-child(10){ a { border-bottom: 2px solid $blue; &:hover{border-bottom: 2px solid #FFF; }}}
+}
+@mixin colored-links {
+  &:nth-child(1) { a { color: $yellow-orange; &:hover{color: #FFF; }}}
+  &:nth-child(2) { a { color: $cyan; &:hover{color: #FFF; }}}
+  &:nth-child(3) { a { color: $blue-violet; &:hover{color: #FFF; }}}
+  &:nth-child(4) { a { color: $violet-magenta; &:hover{color: #FFF; }}}
+  &:nth-child(5) { a { color: $green-cyan; &:hover{color: #FFF; }}}
+  &:nth-child(6) { a { color: $red; &:hover{color: #FFF; }}}
+  &:nth-child(7) { a { color: $green; &:hover{color: #FFF; }}}
+  &:nth-child(8) { a { color: $magenta; &:hover{color: #FFF; }}}
+  &:nth-child(9) { a { color: $yellow; &:hover{color: #FFF; }}}
+  &:nth-child(10){ a { color: $blue; &:hover{color: #FFF; }}}
+}
+
 html {
   // overflow-y: hidden;
   height:100%;
@@ -25,12 +50,7 @@ html {
 body {
   overflow-y: scroll;
   height:100%;
-  background: url('/images/waveofthefuture.jpg') no-repeat fixed center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
+  background: #000;
   margin:0;
   padding:0;
   color:#CDCDCD;
@@ -54,6 +74,16 @@ p,dd,dt,dl {
   background-position:0 0;
 }
 
+.teaser {
+  line-height:1.5em;
+  font-size:17px;
+  font-weight:100;
+
+  @media (max-width: 476px) {
+    font-weight:400;
+  }
+}
+
 // DOCUMENT STRUCTURE
 #container {
   background-color: rgba(0,0,0,0.85);
@@ -63,7 +93,6 @@ p,dd,dt,dl {
 
 .content { margin: 0 auto; }
 #main { min-height: 80vh; }
-#content{ clear:both; }
 
 #header {
   height: 60px;
@@ -93,10 +122,28 @@ p,dd,dt,dl {
         color: #FFF;
       }
 
-      &#about-nav-link    {a{border-bottom:2px solid $red-orange;     &:hover{border-bottom: 2px solid #FFF;}}}
-      &#blog-nav-link    {a{border-bottom:2px solid $cyan-blue;      &:hover{border-bottom: 2px solid #FFF;}}}
-      &#contact-nav-link {a{border-bottom:2px solid $pea-green;      &:hover{border-bottom: 2px solid #FFF;}}}
+      @include colored-link-borders;
     }
+  }
+}
+
+#home-links {
+  clear:both;
+
+  div {
+    padding-bottom: 10px;
+    font-size: 1.25em;
+    font-weight: 700;
+
+    a, a:visited {
+      color: #CDCDCD;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #FFF;
+    }
+
+    @include colored-links;
   }
 }
 
@@ -133,8 +180,8 @@ a:hover .shortbox {
   height:100%;
 }
 footer {
-  border-top: 1px solid rgba(0,0,0,0.3);
-  background-color: rgba(0,0,0,0.95);
+  border-top: 2px solid rgba(100,100,100,0.3);
+  background-color: rgba(25,25,25,0.95);
   position: absolute;
   width: 100%;
 
@@ -166,7 +213,6 @@ h1{
   margin: 0 0 0.25em 0;
 }
 #subtitle {
-  font-weight: 300;
   display:block;
 }
 
@@ -177,6 +223,10 @@ h2 {
   font-weight:700;
   margin-top: 1.25em;
   margin-bottom: 0;
+}
+
+h2:first-child {
+  margin-top: 0.75em;
 }
 
 h2 span {
@@ -245,32 +295,9 @@ dt {
   margin-right:25px;
 }
 
-// unused
-// $red
-// $yellow-orange
-// $green
-// $cyan
-// $blue-violet
-// $violet
-// $magenta
-
-#about { border-bottom: 2px solid $red; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
-#github { border-bottom: 2px solid $cyan-blue; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
-#contact { border-bottom: 2px solid $pea-green; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
-#m2fm { border-bottom: 2px solid $violet-magenta; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
-#twitter { border-bottom: 2px solid $blue; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
-#portfolio { border-bottom: 2px solid $yellow; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
-#photos { border-bottom: 2px solid $red-orange; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
-#blog { border-bottom: 2px solid $green-cyan; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
-#upontheboard { border-bottom: 2px solid $magenta-red; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
-#salttotaste { border-bottom: 2px solid $yellow-green; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
-#everysinglebike { border-bottom: 2px solid $yellow-orange; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
-#shortinsider { border-bottom: 2px solid $cyan; &:hover { a{color:#FFF;} border-bottom: 2px solid #FFF; }}
-
-
 #articles {
   .article-preview {
-    margin-bottom:3.25em;
+    margin-bottom:2.25em;
 
     h2 {
       font-size:18px;
@@ -288,11 +315,6 @@ dt {
       font-style: italic;
     }
   }
-}
-
-.darker {
-  background-color: rgba(0,0,0,0.5);
-  padding: 0.5em 2em;
 }
 
 #article {
@@ -343,12 +365,29 @@ dt {
 // these need to go at the end so they are allowed to override
 
 @media (max-width: 476px) {
+  body {
+    background-image: initial;
+    background-color: #000;
+    font-weight: 400;
+  }
+
   h1 { font-size:28px; font-weight:700; line-height:30px;}
   h2 span { display:block; padding:0; margin-bottom:0.25em; }
   footer { h5 { margin: 1em 0 0 0; } }
+
+  #left-bar { width:100%; }
+  #content { clear:both; }
+
   #header {
     height:30px;
-    navigation { line-height:30px; float:right;}
+    navigation {
+      line-height:30px;
+      float:right;
+      margin-left: 0px;
+      .navbox {
+        margin: 0 2px;
+      }
+    }
   }
 
   .bar-header {
@@ -365,6 +404,9 @@ dt {
 @media (min-width: 477px) and (max-width: 999px) {
   h2 span { display:block; padding:0; margin-bottom:0.25em; }
 
+  #left-bar { width:100%; clear:both; }
+  #content { clear:both; }
+
   #content {
     width: 100%;
     max-width: 595px;
@@ -376,8 +418,12 @@ dt {
 }
 
 @media (min-width: 1000px) and (max-width: 1095px) {
+
+  #left-bar { float:left; }
+
   #content {
     float:right;
+    clear: right;
     width: 100%;
     max-width: 595px;
     margin-right: 82px;
@@ -392,8 +438,10 @@ dt {
 }
 
 @media (min-width: 1096px) {
+  #left-bar { float:left; }
   #content {
     float:right;
+    clear: right;
     width: 100%;
     max-width: 595px;
   }
