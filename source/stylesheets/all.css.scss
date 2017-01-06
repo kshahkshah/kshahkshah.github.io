@@ -55,10 +55,22 @@ body {
   padding:0;
   color:#CDCDCD;
   font-family:"Avenir Next", "Helvetica Neue",Arial,sans-serif;
-  font-size:14px;
+  font-size:17px;
   font-weight: 300;
   -webkit-font-smoothing: subpixel-antialiased;
 }
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  // font-family: 'Josefin Slab', serif;
+  // font-family: 'Crimson Text', serif;
+  // font-family: 'Quattrocento', serif;
+}
+// #left-bar {
+//   h1, h2, h3 {
+//     font-family: 'Libre Baskerville', serif;
+//   }
+// }
 
 a, a:visited { text-decoration:none; color: $cyan-blue; }
 a:hover { text-decoration:underline; }
@@ -75,8 +87,8 @@ p,dd,dt,dl {
 }
 
 .teaser {
-  line-height:1.5em;
-  font-size:17px;
+  line-height:1.75em;
+  font-size:1.25em;
   font-weight:100;
 
   @media (max-width: 476px) {
@@ -100,12 +112,14 @@ p,dd,dt,dl {
   #banner {
     float:left;
     a:hover {
-      h1 { color: #FFF; }
+      h1 {
+        color: #FFF;
+      }
       text-decoration: none;
     }
   }
   navigation {
-    float: left;
+    float: right;
     line-height:60px;
     margin-left:40px;
 
@@ -323,14 +337,10 @@ dt {
   line-height:1.5em;
 
   blockquote {
-    font-size: 3em;
-    line-height: 1.25em;
-    color: #CCC;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0 2.5em 0.5em 2.5em;
+
+    margin: 0;
     font-style: italic;
 
-    font-weight: 100;
     &:before {
       content: "\201C";
     }
@@ -380,10 +390,13 @@ dt {
 
   #header {
     height:30px;
+
     navigation {
       line-height:30px;
       float:right;
       margin-left: 0px;
+      font-size: 14px;
+
       .navbox {
         margin: 0 2px;
       }
