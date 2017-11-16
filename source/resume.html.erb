@@ -19,7 +19,7 @@ title: Portfolio
       <li>languages: Ruby, Javascript (ES6/7), Python, SQL. A bit of Java and C. An interest in ClojureScript, Clojure, lisp in general, functional programming in general and Elixir as a result of those</li>
       <li>data: postgres, mysql, redis, memcached</li>
       <li>visualization: d3.js, Highcharts, Raphael</li>
-      <li>processing: Sidekiq, concurrent-ruby, zeromq</li>
+      <li>processing: Sidekiq, concurrent-ruby, zeromq, kafka</li>
       <li>learning: GNU GSL, Stanford NLP, TensorFlow word2vec, sklearn, named entity recognition, CRFClassifiers</li>
       <li>http: Varnish, haproxy, nginx, passenger, unicorn, pm2</li>
       <li>backend: Rails, Sinatra, Grape, Spree, node.js, Express.js</li>
@@ -30,17 +30,58 @@ title: Portfolio
 
     <h1>Select Experience</h1>
 
-    <h2><a href="https://getswill.com" target="_blank">Swill</a></h2>
-    <h3>June 2016 - Present</h3>
-    <p>
-      Built an inventory pipeline which normalizes data from thousands of point-of-sale systems
-      into a single stream of product inventory representing all partner stores. Involved complex
-      information retrieval and extraction, leveraging a machine trained model for new product
-      discovery as well as a whole host of tricks and heuristics to get high accuracy real time data as output.
-    </p>
-
     <h2>Freelancing / Consulting Engineer</h2>
     <h3>June 2015 - Present</h3>
+
+    <strong><a href="https://draft.com" target="_blank">Draft</a></strong>
+    <p>
+      Following their acquisition, Draft, a leader in daily fantasy sports,
+      began a major marketing spend ahead of the 2017 NFL Season. I was
+      brought on as a consultant to scale the backend ahead of the season.
+      I identified potential troublespots in their application code, architecture,
+      and underlying libraries and provided remedies and guidance to address each.
+      Additionally I constructed a massively concurrent realtime websocket/http
+      load testing script to prove out scalability and find networking/IO
+      bottlenecks along the way.
+    </p>
+
+    <strong><a href="https://greenbusinesspartnership.org" target="_blank">Green Business Partnership</a></strong>
+    <p>
+      Green Business Partnership evolved out of a Westchester County effort to
+      help businesses adopt sustainable practices. I developed a comprehensive web
+      application to allow them to manage their member subscriptions and sponsorships.
+      Additionally, a React interface guides companies and their employees through
+      a survey to collect the specifics of their practices such as energy usage and
+      waste production to aid in their certification effort.
+    </p>
+
+    <strong><a href="http://medlypharmacy.com/" target="_blank">Medly Pharmacy</a></strong>
+    <p>
+      Medley Pharmacy delivers prescriptions to your door for free. They have over a dozen
+      brick and mortar locations in NYC and are launching an iOS app. This work was in
+      collaboration with <a href="http://goposse.com/" target="_blank">Posse</a>.
+      I worked heavily on the backend and administrative interfaces while interacting with the
+      client to get closer to launch.
+    </p>
+
+    <strong><a href="https://getswill.com" target="_blank">Swill</a></strong>
+    <p>
+      I built an inventory pipeline which accepts, extracts, transforms, and normalizes
+      data from thousands of point-of-sale systems into a single stream of product
+      inventory representing all of Swill's partner stores. This involved a complex
+      information retrieval and extraction hierarchy and we leverage a machine trained
+      model for new product discovery as well as a whole host of tricks and heuristics
+      to get high accuracy real time data as output.
+    </p>
+
+    <strong><a href="https://www.enhancedmood.com/" target="_blank">EnhancedMood</a></strong>
+    <p>
+      I worked directly with a clinician to develop a simple iOS app (ReactNative)
+      to allow users to inventory their current mood. The simple routine of
+      "checking in" to an emotion and receiving a content-based reward is proving
+      to break the cycle of negative thoughts and emotions. The program is now
+      entering an NYU accelerator.
+    </p>
 
     <strong>Vive Style</strong>
     <p>
@@ -50,22 +91,6 @@ title: Portfolio
       build an agency-style process within a fast moving start up. We produced comprehensive
       designs which reflected the true long term business priorities and worked to
       incrementally implement them across multiple platforms.
-    </p>
-
-    <strong>Four Winds Katonah</strong>
-    <p>
-      I built a backend for an application serving in-patients at mental health
-      facilities to self assess their feelings. The goal was to decrease incidents
-      with clinical staff and self-harm by providing an outlet for patients to freely
-      express their emotions. Patients can "check-in" to an emotion and are rewarded
-      with a variety of content supplied via the backend.
-    </p>
-    <p>
-      I worked directly with a clinician who'd found that a simple routine of
-      acknowledgment of negative emotion paired with a positive stimuli
-      drastically reduced drug interventions and incidents with clinical staff.
-      The backend is HIPPA compliant and allows clinicians to track overall
-      progress at a facility or an individual patient.
     </p>
 
     <strong><a href="http://parachutehealth.com" target="_blank">Parachute Health</a></strong>
