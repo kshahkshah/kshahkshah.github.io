@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Human Constructs</title>
+  <subtitle>Thoughts on music, film, code, and culture</subtitle>
+  <id>http://kunalashah.com/blog</id>
+  <link href="http://kunalashah.com/blog"/>
+  <link href="http://kunalashah.com/feed.xml" rel="self"/>
+  <updated>2017-09-18T20:00:00-04:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Alicia Keys in Paris</title>
+    <link rel="alternate" href="http://kunalashah.com/blog/2017/09/19/alicia-keys-in-paris.html"/>
+    <id>http://kunalashah.com/blog/2017/09/19/alicia-keys-in-paris.html</id>
+    <published>2017-09-18T20:00:00-04:00</published>
+    <updated>2017-11-16T23:40:48-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="video-container youtube"&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/AG4Rfao5uyU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;br clear="all"&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <title>St. Vincent &amp; Andrew Bird</title>
+    <link rel="alternate" href="http://kunalashah.com/blog/2017/05/09/st-vincent-andrew-bird.html"/>
+    <id>http://kunalashah.com/blog/2017/05/09/st-vincent-andrew-bird.html</id>
+    <published>2017-05-08T20:00:00-04:00</published>
+    <updated>2017-11-16T23:40:48-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="video-container youtube"&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/q37IAlsw8r8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Recent HN Links</title>
+    <link rel="alternate" href="http://kunalashah.com/blog/2017/03/21/recent-hn-links.html"/>
+    <id>http://kunalashah.com/blog/2017/03/21/recent-hn-links.html</id>
+    <published>2017-03-20T20:00:00-04:00</published>
+    <updated>2017-11-16T23:40:48-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">Useful stuff I'd like to go through&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;div&gt;
+http://course.fast.ai - starts with NN, where Andrew Ng's course leaves off&lt;br&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;div&gt;
+http://www.craftinginterpreters.com - when messing around with building lispy I used a parser generator, but this has a nice section on recursive descent&lt;br&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;div&gt;
+http://distill.pub - Machine Learning allstars go Bret Victor style.&lt;br&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;div&gt;
+http://sarabander.github.io/sicp/html/index.xhtml - Nicely formatted version of SICP&lt;br&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Jackson C Frank "Blues Runs the Game"</title>
+    <link rel="alternate" href="http://kunalashah.com/blog/2016/06/17/jackson-c-frank-blues-runs-the-game.html"/>
+    <id>http://kunalashah.com/blog/2016/06/17/jackson-c-frank-blues-runs-the-game.html</id>
+    <published>2016-06-16T20:00:00-04:00</published>
+    <updated>2017-11-16T23:40:48-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="video-container youtube"&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/RgY4GnLGsLQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;br clear="all"&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <title>In the Mood for Love</title>
+    <link rel="alternate" href="http://kunalashah.com/blog/2016/02/26/in-the-mood-for-love.html"/>
+    <id>http://kunalashah.com/blog/2016/02/26/in-the-mood-for-love.html</id>
+    <published>2016-02-25T19:00:00-05:00</published>
+    <updated>2017-11-16T23:40:48-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="video-container youtube"&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/fIgU9aNpb9k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;br clear="all"&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Mother of All Demos</title>
+    <link rel="alternate" href="http://kunalashah.com/blog/2016/02/04/the-mother-of-all-demos.html"/>
+    <id>http://kunalashah.com/blog/2016/02/04/the-mother-of-all-demos.html</id>
+    <published>2016-02-03T19:00:00-05:00</published>
+    <updated>2017-11-16T23:40:48-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div&gt;I'm currently reading "Tools for Thought" by Howard Rheingold in which I learned about Doug Engelbart's mind blowing demo which was in fact recorded:&lt;/div&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;div class="video-container youtube"&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/yJDv-zdhzMY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+</content>
+  </entry>
+</feed>

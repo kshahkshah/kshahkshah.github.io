@@ -1,0 +1,156 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <!-- No modern browser? No polyfill for you! This is a personal site not a client site! -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Some Code Exercises</title>
+    <meta name="description" content="I’ve put some code exercises on GitHub. They are the absolute basics; data structures for graphs and sorting algorithms. The stuff you would learn if you formally studied Computer Science - which I did not. In the end, a very worthwhile endeavour." />
+    <meta name="og:description" content="I’ve put some code exercises on GitHub. They are the absolute basics; data structures for graphs and sorting algorithms. The stuff you would learn if you formally studied Computer Science - which I did not. In the end, a very worthwhile endeavour." />
+    <meta name="keywords" content="code" />
+    <meta name="twitter:creator" content="@kashahkashah" />
+    <meta name="twitter:image:src" content="https://www.kunalashah.com/images/greatwave-ec769a42.jpg" />
+    <meta name="og:image" content="https://www.kunalashah.com/images/greatwave-ec769a42.jpg" />
+    <meta name="title" content="Some Code Exercises" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Some Code Exercises" />
+    <meta name="og:title" content="Some Code Exercises" />
+
+    <title>Some Code Exercises</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-31254254-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+    <link href="https://www.kunalashah.com/stylesheets/normalize-6197e73d.css" rel="stylesheet" type="text/css" /><link href="https://www.kunalashah.com/stylesheets/all-99470f8b.css" rel="stylesheet" type="text/css" /><link href="https://www.kunalashah.com/stylesheets/code-94e4ce1a.css" rel="stylesheet" type="text/css" />
+    <script src="https://www.kunalashah.com/javascripts/all-7d501afe.js" type="text/javascript"></script>
+    <style type="text/css" media="all">
+      object{ width:100%; }
+    </style>
+  </head>
+  <body class='blog blog_2014 blog_2014_12 blog_2014_12_20 blog_2014_12_20_exercises'>
+    <div id='container'>
+      <div id='outerContent'>
+        <div class='content' id='main' style="">
+            <div id='header'>
+    <div id='banner'>
+      <a href="/" alt="www.kunalashah.com" id='home'><h1>Kunal Shah</h1></a>
+    </div>
+    <navigation>
+      <div class='navbox'><a href="/about">about</a></div>
+      <div class='navbox'><a href="/resume">resume</a></div>
+      <div class='navbox'><a href="/contact">contact</a></div>
+      <div class='navbox'><a href="/blog">blog</a></div>
+    </navigation>
+  </div>
+    <div id='content'>
+    <h2>Some Code Exercises <span>December 20, 2014</span></h2>
+    <div class='tags'>
+      in <a href="/blog/tags/code.html">code</a>
+    </div>
+    <div id='article'>
+      <p>I&rsquo;ve put some <a href="http://github.com/kshahkshah/exercises">code exercises on GitHub</a>. They are the absolute basics; data structures for graphs and sorting algorithms. The stuff you would learn if you formally studied Computer Science - which I did not. In the end, a very worthwhile endeavour.</p>
+
+<p>I&rsquo;ll admit frustration at the beginning - that is to say the first couple of days. Once I got the ball rolling, however, it felt good to work on and so I am happy to share. Specifically, the power of pathfinding algorithms like <a href="http://en.wikipedia.org/wiki/A*_search_algorithm">A*</a> is truly awesome. It has such obvious abundance in a variety of real world applications that even a naive implementation is fun to play with. It made me think of the <a href="http://en.wikipedia.org/wiki/Civilization_%28video_game%29">turn based strategy games</a> of my youth.</p>
+
+<p>I was really looking forward to using the new JavaScript syntax available in <a href="https://github.com/lukehoban/es6features">ES6&rsquo;s</a> to write these in. <a href="http://kangax.github.io/compat-table/es6/">However most implementations</a>, as of this writing, have only a subset of the proposed syntax implemented. Additionally I&rsquo;ve caught wind of some disagreements on the spec itself. Hey, at least JavaScript is evolving again after <a href="http://en.wikipedia.org/wiki/ECMAScript#Versions">over a 10 year hiatus</a> since a major release.</p>
+
+<p>In the end I&rsquo;m using <a href="https://github.com/joyent/node/wiki/ES6-%28a.k.a.-Harmony%29-Features-Implemented-in-V8-and-Available-in-Node">node.js/v8</a> so I have trim little executables.</p>
+
+<p>A final note to this post was realizing how useful the Struct and OpenStruct classes in Ruby truly are. They essentially function as tuples. I should be encouraged to use them and create my own arbitrary structures more willingly instead of forcing data into a specific pattern. After all the language creators built flexibility into their standard libraries for a reason.</p>
+
+    </div>
+  </div>
+
+
+          <div class="spacer" style="width: 100%; clear: both;">&nbsp;</div>
+        </div>
+      </div>
+      <footer>
+        <div class='content'>
+          <div class='footer-box'>
+            <h5>Recent Articles</h5>
+            <ol>
+                <li><span>Sep 19</span> <a href="/blog/2017/09/19/alicia-keys-in-paris.html">Alicia Keys in Paris</a></li>
+                <li><span>May  9</span> <a href="/blog/2017/05/09/st-vincent-andrew-bird.html">St. Vincent & Andrew Bird</a></li>
+                <li><span>Mar 21</span> <a href="/blog/2017/03/21/recent-hn-links.html">Recent HN Links</a></li>
+                <li><span>Jun 17</span> <a href="/blog/2016/06/17/jackson-c-frank-blues-runs-the-game.html">Jackson C Frank "Blues Runs the Game"</a></li>
+                <li><span>Feb 26</span> <a href="/blog/2016/02/26/in-the-mood-for-love.html">In the Mood for Love</a></li>
+                <li><span>Feb  4</span> <a href="/blog/2016/02/04/the-mother-of-all-demos.html">The Mother of All Demos</a></li>
+                <li><span>Jan 25</span> <a href="/blog/2016/01/25/some-reflections-on-early-history-by-j-c-r-licklider.html">Some Reflections on Early Computing History by J.C.R. Licklider</a></li>
+                <li><span>Dec 18</span> <a href="/blog/2015/12/18/bayesdb.html">BayesDB</a></li>
+                <li><span>Dec 18</span> <a href="/blog/2015/12/18/bosley.html">Bosley</a></li>
+                <li><span>Dec  7</span> <a href="/blog/2015/12/07/a-wealth-of-pry-plugins.html">a wealth of pry plugins</a></li>
+            </ol>
+          </div>
+          <div class='footer-box'>
+            <h5>Tags</h5>
+            <ol>
+                <li><a href="/blog/tags/code.html">code (19)</a></li>
+                <li><a href="/blog/tags/photography.html">photography (2)</a></li>
+                <li><a href="/blog/tags/art.html">art (3)</a></li>
+                <li><a href="/blog/tags/middleman.html">middleman (2)</a></li>
+                <li><a href="/blog/tags/meta.html">meta (5)</a></li>
+                <li><a href="/blog/tags/film.html">film (7)</a></li>
+                <li><a href="/blog/tags/culture.html">culture (4)</a></li>
+                <li><a href="/blog/tags/music.html">music (49)</a></li>
+                <li><a href="/blog/tags/npr.html">npr (3)</a></li>
+                <li><a href="/blog/tags/quotes.html">quotes (7)</a></li>
+                <li><a href="/blog/tags/cycling.html">cycling (1)</a></li>
+                <li><a href="/blog/tags/soul.html">soul (4)</a></li>
+                <li><a href="/blog/tags/jazz.html">jazz (3)</a></li>
+                <li><a href="/blog/tags/design.html">design (3)</a></li>
+                <li><a href="/blog/tags/documentaries.html">documentaries (1)</a></li>
+                <li><a href="/blog/tags/thoughts.html">thoughts (8)</a></li>
+                <li><a href="/blog/tags/war.html">war (1)</a></li>
+                <li><a href="/blog/tags/folk.html">folk (1)</a></li>
+                <li><a href="/blog/tags/country.html">country (5)</a></li>
+                <li><a href="/blog/tags/hacking.html">hacking (3)</a></li>
+                <li><a href="/blog/tags/adirondacks.html">adirondacks (1)</a></li>
+                <li><a href="/blog/tags/hiking.html">hiking (2)</a></li>
+                <li><a href="/blog/tags/crossposts.html">crossposts (2)</a></li>
+                <li><a href="/blog/tags/blues.html">blues (3)</a></li>
+                <li><a href="/blog/tags/philosophy.html">philosophy (3)</a></li>
+                <li><a href="/blog/tags/projects.html">projects (1)</a></li>
+                <li><a href="/blog/tags/race.html">race (3)</a></li>
+                <li><a href="/blog/tags/missing.html">missing (4)</a></li>
+                <li><a href="/blog/tags/history.html">history (1)</a></li>
+                <li><a href="/blog/tags/technology.html">technology (1)</a></li>
+                <li><a href="/blog/tags/learnings.html">learnings (2)</a></li>
+                <li><a href="/blog/tags/funk.html">funk (1)</a></li>
+                <li><a href="/blog/tags/inside-jokes.html">inside jokes (1)</a></li>
+                <li><a href="/blog/tags/rock.html">rock (1)</a></li>
+                <li><a href="/blog/tags/sustainability.html">sustainability (1)</a></li>
+            </ol>
+          </div>
+          <div class='footer-box'>
+            <h5>By Year</h5>
+            <ol>
+                <li><a href="/blog/2017.html">2017 (3)</a></li>
+                <li><a href="/blog/2016.html">2016 (4)</a></li>
+                <li><a href="/blog/2015.html">2015 (32)</a></li>
+                <li><a href="/blog/2014.html">2014 (22)</a></li>
+                <li><a href="/blog/2013.html">2013 (32)</a></li>
+                <li><a href="/blog/2012.html">2012 (9)</a></li>
+                <li><a href="/blog/2011.html">2011 (10)</a></li>
+            </ol>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
