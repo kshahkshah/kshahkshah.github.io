@@ -110,7 +110,7 @@ set :images_dir, 'images'
 
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
-set :url_root, 'http://kunalashah.com'
+set :url_root, 'https://www.kunalashah.com'
 
 activate :asset_hash
 
@@ -137,7 +137,7 @@ set :asset_host, 'http://localhost:4567'
 
 # Build-specific configuration
 configure :build do
-  set :asset_host, 'http://kunalashah.com'
+  set :asset_host, 'https://www.kunalashah.com'
 
   # For example, change the Compass output style for deployment
   activate :minify_css

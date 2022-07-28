@@ -10,4 +10,4 @@ When design little applications like [Up On The Board](http://upontheboard.com/)
 
 Additionally, I really like a CSS3 feature I hadn't known about, [viewport percentage lengths](http://www.w3.org/TR/css3-values/#viewport-relative-lengths). Each vw is 1% of the initial containing blocks width. So 100vw is the entire width of the parent block. <strike>I could see this being very useful for scaling up headers on articles.</strike>. [This is the way to do it](http://fittextjs.com/), standalone code [here](https://github.com/adactio/FitText.js).
 
-TL;DR I played around with the Picturefill polyfill to make responsive thumbnails [here](https://github.com/whistlerbrk/picturefill-test).
+TL;DR I played around with the Picturefill polyfill to make responsive thumbnails [here](https://github.com/kshahkshah/picturefill-test).

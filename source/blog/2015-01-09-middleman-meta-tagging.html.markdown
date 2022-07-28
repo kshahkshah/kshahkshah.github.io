@@ -16,7 +16,7 @@ set_meta_tags({
   "description"       => article_description,
   "og:description"    => article_description,
   "keywords"          => current_article.tags.join(', '),
-  "twitter:creator"   => '@whistlerbrk',
+  "twitter:creator"   => '@kashahkashah',
   "twitter:image:src" => image_lead_path,
   "og:image"          => image_lead_path
 })

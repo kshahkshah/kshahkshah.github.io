@@ -4,7 +4,7 @@ date: 2014-12-20 19:42 UTC
 tags: code
 ---
 
-I've put some [code exercises on GitHub](http://github.com/whistlerbrk/exercises). They are the absolute basics; data structures for graphs and sorting algorithms. The stuff you would learn if you formally studied Computer Science - which I did not. In the end, a very worthwhile endeavour.
+I've put some [code exercises on GitHub](http://github.com/kshahkshah/exercises). They are the absolute basics; data structures for graphs and sorting algorithms. The stuff you would learn if you formally studied Computer Science - which I did not. In the end, a very worthwhile endeavour.
 
 I'll admit frustration at the beginning - that is to say the first couple of days. Once I got the ball rolling, however, it felt good to work on and so I am happy to share. Specifically, the power of pathfinding algorithms like [A*](http://en.wikipedia.org/wiki/A*_search_algorithm) is truly awesome. It has such obvious abundance in a variety of real world applications that even a naive implementation is fun to play with. It made me think of the [turn based strategy games](http://en.wikipedia.org/wiki/Civilization_%28video_game%29) of my youth.
 
