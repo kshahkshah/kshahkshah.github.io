@@ -108,6 +108,8 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :build_dir, 'docs'
+
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 set :url_root, 'https://www.kunalashah.com'
