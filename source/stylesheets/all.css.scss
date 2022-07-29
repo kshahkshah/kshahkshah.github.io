@@ -56,7 +56,7 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: 'Libre Baskerville', serif;
   // font-family: 'Josefin Slab', serif;
   // font-family: 'Crimson Text', serif;
@@ -106,11 +106,13 @@ p,dd,dt,dl {
 
   #banner {
     float:left;
+    a {
+      color: #FFF;
+      font-size: 28px;
+      font-weight: 900;
+    }
     a:hover {
-      h1 {
-        color: #FFF;
-      }
-      text-decoration: none;
+      color: #FFF;
     }
   }
   navigation {
@@ -215,7 +217,7 @@ footer {
   text-align: center;
 }
 
-h1{
+h1 {
   color:#FFF;
   font-size:36px;
   font-weight:700;
@@ -331,7 +333,6 @@ dt {
 #article {
   margin: 2em 0;
   min-height: 600px;
-  line-height:1.5em;
 
   blockquote {
 
@@ -378,7 +379,7 @@ dt {
     font-weight: 400;
   }
 
-  h1 { font-size:28px; font-weight:700; line-height:30px; }
+  h1 { font-size:24px; font-weight:700; line-height:30px; }
   h2 span { display:block; padding:0; margin-bottom:0.25em; }
   footer { h5 { margin: 1em 0 0 0; } }
 
