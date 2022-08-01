@@ -19,3 +19,4 @@ tmp/*
 .DS_Store
 
 data/mail2frontmatter.yml
+docs/CNAME
