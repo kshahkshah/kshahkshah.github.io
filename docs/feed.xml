@@ -5,10 +5,22 @@
   <id>http://kunalashah.com/blog</id>
   <link href="http://kunalashah.com/blog"/>
   <link href="http://kunalashah.com/feed.xml" rel="self"/>
-  <updated>2017-09-18T20:00:00-04:00</updated>
+  <updated>2022-08-02T00:15:00-04:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Time to Start Writing Again</title>
+    <link rel="alternate" href="http://kunalashah.com/blog/2022/08/02/writing-again.html"/>
+    <id>http://kunalashah.com/blog/2022/08/02/writing-again.html</id>
+    <published>2022-08-02T00:15:00-04:00</published>
+    <updated>2022-08-02T00:25:13-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Hello 👋. After a long hiatus and letting my public writing and this personal site lapse, I&amp;rsquo;ve decided to resume my efforts here. I realized a while ago that with these blogs, absent a large pre-existing social media presence, we&amp;rsquo;re really writing for ourselves first and foremost. If someone happens to benefit from our writing, that is wonderful but a non-goal at this stage. I hope to use this space to continue to use this space to organize my thoughts as well as share things I like, find thought provoking, or beautiful.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Alicia Keys in Paris</title>
     <link rel="alternate" href="http://kunalashah.com/blog/2017/09/19/alicia-keys-in-paris.html"/>
@@ -82,20 +94,6 @@ http://sarabander.github.io/sicp/html/index.xhtml - Nicely formatted version of 
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="video-container youtube"&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/fIgU9aNpb9k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;br clear="all"&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <title>The Mother of All Demos</title>
-    <link rel="alternate" href="http://kunalashah.com/blog/2016/02/04/the-mother-of-all-demos.html"/>
-    <id>http://kunalashah.com/blog/2016/02/04/the-mother-of-all-demos.html</id>
-    <published>2016-02-03T19:00:00-05:00</published>
-    <updated>2017-11-16T23:40:48-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div&gt;I'm currently reading "Tools for Thought" by Howard Rheingold in which I learned about Doug Engelbart's mind blowing demo which was in fact recorded:&lt;/div&gt;
-&lt;div&gt;&lt;br&gt;&lt;/div&gt;
-&lt;div class="video-container youtube"&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/yJDv-zdhzMY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 </content>
   </entry>
 </feed>

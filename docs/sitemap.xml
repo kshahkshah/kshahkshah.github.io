@@ -235,6 +235,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.kunalashah.com/blog/2022/08/02/writing-again.html</loc>
+    <lastmod>2022-08-02T00:25:13-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kunalashah.com/blog/2013/05/13/the-future-is-murder.html</loc>
     <lastmod>2017-11-16T23:39:47-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -325,12 +331,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.kunalashah.com/blog/2013/11/06/missing-7.html</loc>
-    <lastmod>2017-11-16T23:40:48-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.kunalashah.com/blog/2017/05/09/st-vincent-andrew-bird.html</loc>
     <lastmod>2017-11-16T23:40:48-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -363,12 +363,6 @@
   <url>
     <loc>https://www.kunalashah.com/blog/2013/04/18/streets-of-baltimore.html</loc>
     <lastmod>2017-11-16T23:39:47-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kunalashah.com/blog/2011/09/01/missing-3.html</loc>
-    <lastmod>2017-11-16T23:40:48-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -547,19 +541,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.kunalashah.com/blog/2011/06/18/missing-2.html</loc>
-    <lastmod>2017-11-16T23:40:48-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.kunalashah.com/blog/2013/05/22/look-at-miss-ohio.html</loc>
-    <lastmod>2017-11-16T23:39:47-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kunalashah.com/blog/2011/05/26/Cien-Dias-de-Vengaza-Prologue.html</loc>
     <lastmod>2017-11-16T23:39:47-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -609,12 +591,6 @@
   <url>
     <loc>https://www.kunalashah.com/blog/2014/12/22/fun-with-middleman.html</loc>
     <lastmod>2017-11-16T23:39:47-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kunalashah.com/blog/2011/05/16/missing-1.html</loc>
-    <lastmod>2017-11-16T23:40:48-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -913,12 +889,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.kunalashah.com/blog/tags/missing.html</loc>
-    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.kunalashah.com/blog/tags/history.html</loc>
     <lastmod>2022-08-01T23:22:34-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -943,12 +913,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.kunalashah.com/blog/tags/inside-jokes.html</loc>
-    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.kunalashah.com/blog/tags/rock.html</loc>
     <lastmod>2022-08-01T23:22:34-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -956,6 +920,24 @@
   </url>
   <url>
     <loc>https://www.kunalashah.com/blog/tags/sustainability.html</loc>
+    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kunalashah.com/blog/2022.html</loc>
+    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kunalashah.com/blog/2022/08.html</loc>
+    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kunalashah.com/blog/2022/08/02.html</loc>
     <lastmod>2022-08-01T23:22:34-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1477,12 +1459,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.kunalashah.com/blog/2013/11/06.html</loc>
-    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.kunalashah.com/blog/2013/10.html</loc>
     <lastmod>2022-08-01T23:22:34-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1813,18 +1789,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.kunalashah.com/blog/2011/09.html</loc>
-    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kunalashah.com/blog/2011/09/01.html</loc>
-    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.kunalashah.com/blog/2011/07.html</loc>
     <lastmod>2022-08-01T23:22:34-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1838,12 +1802,6 @@
   </url>
   <url>
     <loc>https://www.kunalashah.com/blog/2011/06.html</loc>
-    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kunalashah.com/blog/2011/06/18.html</loc>
     <lastmod>2022-08-01T23:22:34-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1867,19 +1825,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.kunalashah.com/blog/2011/05/26.html</loc>
-    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.kunalashah.com/blog/2011/05/20.html</loc>
-    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.kunalashah.com/blog/2011/05/16.html</loc>
     <lastmod>2022-08-01T23:22:34-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
