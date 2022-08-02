@@ -1,5 +1,4 @@
 ---
-layout: page
 pageable: true
 per_page: 30
 ---
@@ -20,7 +19,7 @@ per_page: 30
     <% end %>
   </div>
 
-  <div class='shortbox'>
+  <div class='pagination'>
     <% if prev_page %><%= link_to 'Previous page', prev_page %><% end %>
     <% if num_pages > 1 %><%= page_number %> of <%= num_pages %> pages &nbsp;&nbsp;<% end %>
     <% if next_page %><%= link_to 'Next page', next_page %><% end %>

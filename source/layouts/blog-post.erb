@@ -14,7 +14,7 @@
   })
 %>
 
-<% wrap_layout :page do %>
+<% wrap_layout :layout do %>
   <div id='content'>
     <h2><%= current_article.title %> <span><%= current_article.date.strftime('%B %e, %Y') %></span></h2>
     <%- if current_article.tags.any? %>

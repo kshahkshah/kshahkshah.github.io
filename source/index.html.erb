@@ -1,17 +1,26 @@
 ---
 hide_blog: true
+per_page: 5
 ---
-<div id='header'>
-  <div id='banner'>
-    <a href="/" alt="www.kunalashah.com" id='home'>Kunal Shah</a>
-  </div>
-</div>
 
-<div id='home-links'>
-  <div><a href="/about">About</a></div>
-  <div><a href="/cv">CV</a></div>
-  <div><a href="/contact">Contact</a></div>
-  <div><a href="/blog">Blog</a></div>
-  <div><a href="https://github.com/kshahkshah">GitHub</a></div>
-  <div><a href="https://www.linkedin.com/in/kunal-a-shah/">LinkedIn</a></div>
+<div id='content'>
+  <div id='articles'>
+    <% page_articles.each_with_index do |article, i| %>
+    <div class='article-preview'>
+      <h1><%= link_to article.title, article %></h1>
+      <span class='published'><%= article.date.strftime('%b %e %Y') %></span>
+      <% if article.tags.any? %>
+        -
+        <span class='tagged'><%= article.tags.map{ |t| link_to t, tag_path(t) }.join(', ') %></span>
+      <% end %>
+      <%= article.summary(250) %>
+      <% if article.summary(250).length >= 250 %>
+      <%= link_to 'Read more...', article %>
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+  <div class='pagination'>
+    <%= link_to 'More at the blog...', '/blog' %>
+  </div>
 </div>

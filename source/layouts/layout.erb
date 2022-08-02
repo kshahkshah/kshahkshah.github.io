@@ -34,6 +34,17 @@
     <div id='container'>
       <div id='outerContent'>
         <div class='content' id='main' style="<% if current_page.data.hide_blog %>min-height: 100vh;<% end %>">
+          <div id='header'>
+            <div id='banner'>
+              <a href="/" alt="www.kunalashah.com" id='home'>Kunal Shah</a>
+            </div>
+            <navigation>
+              <div class='navbox'><a href="/about">about</a></div>
+              <div class='navbox'><a href="/cv">cv</a></div>
+              <div class='navbox'><a href="/contact">contact</a></div>
+              <div class='navbox'><a href="/blog">blog</a></div>
+            </navigation>
+          </div>
           <%= yield %>
           <div class="spacer" style="width: 100%; clear: both;">&nbsp;</div>
         </div>
