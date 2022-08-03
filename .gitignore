@@ -10,7 +10,6 @@
 # Ignore cache
 /.sass-cache
 /.cache
-Gemfile.lock
 
 log/
 tmp/*
@@ -19,4 +18,3 @@ tmp/*
 .DS_Store
 
 data/mail2frontmatter.yml
-docs/CNAME

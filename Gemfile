@@ -22,4 +22,4 @@ gem 'redcarpet'
 gem 'builder'
 gem 'nokogiri'
 
-gem 'byebug'
+gem 'pry'
