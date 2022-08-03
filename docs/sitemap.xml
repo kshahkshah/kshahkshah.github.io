@@ -13,6 +13,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.kunalashah.com/user-manual/</loc>
+    <lastmod>2022-08-03T12:03:53-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kunalashah.com/contact/</loc>
     <lastmod>2022-08-01T18:28:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -165,6 +171,12 @@
   <url>
     <loc>https://www.kunalashah.com/blog/2013/03/04/in-the-city.html</loc>
     <lastmod>2017-11-16T23:39:47-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kunalashah.com/blog/2022/08/03/personal-user-manuals.html</loc>
+    <lastmod>2022-08-03T10:18:47-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -829,6 +841,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.kunalashah.com/blog/tags/startups.html</loc>
+    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kunalashah.com/blog/tags/leadership.html</loc>
+    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kunalashah.com/blog/tags/folk.html</loc>
     <lastmod>2022-08-01T23:22:34-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -932,6 +956,12 @@
   </url>
   <url>
     <loc>https://www.kunalashah.com/blog/2022/08.html</loc>
+    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kunalashah.com/blog/2022/08/03.html</loc>
     <lastmod>2022-08-01T23:22:34-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
