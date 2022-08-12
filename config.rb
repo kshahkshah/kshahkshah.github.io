@@ -134,21 +134,14 @@ activate :automatic_clowncar,
   :namespace_directory => %w(photos),
   :filetypes => [:jpg, :jpeg, :png]
 
-activate :asset_host
-set :asset_host, 'http://localhost:4567'
 
 # Build-specific configuration
 configure :build do
-  set :asset_host, 'https://www.kunalashah.com'
-
   # For example, change the Compass output style for deployment
   activate :minify_css
 
   # Minify Javascript on build
   activate :minify_javascript
-
-  # Enable cache buster
-  activate :asset_hash
 
   # Use relative URLs
   # activate :relative_assets
