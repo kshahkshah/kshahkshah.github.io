@@ -25,6 +25,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.kunalashah.com/admin/</loc>
+    <lastmod>2022-08-11T21:55:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kunalashah.com/song/</loc>
     <lastmod>2017-11-16T23:40:48-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -253,8 +259,20 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.kunalashah.com/blog/2022/08/03/personal-user-manuals/</loc>
+    <lastmod>2022-08-03T10:18:47-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kunalashah.com/blog/2015/02/08/bob-kramer-the-fire-inside/</loc>
     <lastmod>2017-11-16T23:40:48-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kunalashah.com/blog/2022/08/02/writing-again/</loc>
+    <lastmod>2022-08-02T00:25:13-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -727,6 +745,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.kunalashah.com/blog/tags/startups/</loc>
+    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kunalashah.com/blog/tags/leadership/</loc>
+    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.kunalashah.com/blog/tags/music/</loc>
     <lastmod>2022-08-01T23:22:34-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -920,6 +950,30 @@
   </url>
   <url>
     <loc>https://www.kunalashah.com/blog/tags/funk/</loc>
+    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kunalashah.com/blog/2022/</loc>
+    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kunalashah.com/blog/2022/08/</loc>
+    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kunalashah.com/blog/2022/08/03/</loc>
+    <lastmod>2022-08-01T23:22:34-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.kunalashah.com/blog/2022/08/02/</loc>
     <lastmod>2022-08-01T23:22:34-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

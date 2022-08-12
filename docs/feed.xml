@@ -5,10 +5,44 @@
   <id>http://kunalashah.com/blog</id>
   <link href="http://kunalashah.com/blog"/>
   <link href="http://kunalashah.com/feed.xml" rel="self"/>
-  <updated>2017-09-18T20:00:00-04:00</updated>
+  <updated>2022-08-03T10:10:00-04:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Personal User Manuals</title>
+    <link rel="alternate" href="http://kunalashah.com/blog/2022/08/03/personal-user-manuals/"/>
+    <id>http://kunalashah.com/blog/2022/08/03/personal-user-manuals/</id>
+    <published>2022-08-03T10:10:00-04:00</published>
+    <updated>2022-08-03T10:18:47-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;A great deal of our growth at &lt;a href="https://better.com"&gt;Better.com&lt;/a&gt; took place after the lockdown in March of 2020, throughout the waves of the pandemic and into 2021. A company which employed far less than 500 people in 2019 balooned to over 10,000 employees in late 2021 all stationed throughout the country. Most people had never met each other, been to our physical offices, and critically had no idea what type of culture they were walking into. I&amp;rsquo;ll write more about cultural expectation setting in the future.&lt;/p&gt;
+
+&lt;blockquote&gt;Starting a new job feels like joining a series in season 4&lt;/blockquote&gt;
+
+&lt;div class='attribution'&gt;&lt;a href='https://www.reddit.com/r/Showerthoughts/comments/pyv0yx/starting_a_new_job_feels_like_joining_a_series_in' target='_blank'&gt;from a Reddit post&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Imagine being a new report, a junior engineer perhaps, on a mostly remote team. Two weeks into the job you get an 8PM Slack message from your manager or another senior or tenured individual. It doesn&amp;rsquo;t seem critical to you, but.. could it be? Do I look into this now? Tomorrow? Should I even ask? If I ask does this make me seem lazy? My manager seems friendly and reasonable, but is that affability a tactic or genuine? Now of course expectation setting should be handled early in a report&amp;rsquo;s tenure at a company and continuously throughout. But people forget and not everyone you work with reports into you. Beyond that, your peers and stakeholders could benefit from something tangibly written down and the author is likely to benefit from writing it down as well.&lt;/p&gt;
+
+&lt;p&gt;A &lt;a href="https://www.linkedin.com/in/skand/"&gt;talented manager&lt;/a&gt; I worked with wrote a document along these lines. A &amp;ldquo;working with me&amp;rdquo; document that included working hours, communication style, and a bit about him personally. I adopted this practice and encouraged others to do the same but we never came to discuss what a good template of this document might look like.&lt;/p&gt;
+
+&lt;p&gt;Long story short, I&amp;rsquo;m putting out my own little naïve attempt to create this template on GitHub soon and publishing my own &lt;em&gt;instance&lt;/em&gt; of this as well, read &lt;a href="/user-manual"&gt;Kunal&amp;rsquo;s User Manual&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Time to Start Writing Again</title>
+    <link rel="alternate" href="http://kunalashah.com/blog/2022/08/02/writing-again/"/>
+    <id>http://kunalashah.com/blog/2022/08/02/writing-again/</id>
+    <published>2022-08-02T00:15:00-04:00</published>
+    <updated>2022-08-02T00:25:13-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Hello 👋. After a long hiatus and letting my public writing and this personal site lapse, I&amp;rsquo;ve decided to resume my efforts here. I realized a while ago that with these blogs, absent a large pre-existing social media presence, we&amp;rsquo;re really writing for ourselves first and foremost. If someone happens to benefit from our writing, that is wonderful but a non-goal at this stage. I hope to use this space to continue to use this space to organize my thoughts as well as share things I like, find thought provoking, or beautiful.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Alicia Keys in Paris</title>
     <link rel="alternate" href="http://kunalashah.com/blog/2017/09/19/alicia-keys-in-paris/"/>
@@ -70,32 +104,6 @@ http://sarabander.github.io/sicp/html/index.xhtml - Nicely formatted version of 
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="video-container youtube"&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/RgY4GnLGsLQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;br clear="all"&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <title>In the Mood for Love</title>
-    <link rel="alternate" href="http://kunalashah.com/blog/2016/02/26/in-the-mood-for-love/"/>
-    <id>http://kunalashah.com/blog/2016/02/26/in-the-mood-for-love/</id>
-    <published>2016-02-25T19:00:00-05:00</published>
-    <updated>2017-11-16T23:40:48-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="video-container youtube"&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/fIgU9aNpb9k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;br clear="all"&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <title>The Mother of All Demos</title>
-    <link rel="alternate" href="http://kunalashah.com/blog/2016/02/04/the-mother-of-all-demos/"/>
-    <id>http://kunalashah.com/blog/2016/02/04/the-mother-of-all-demos/</id>
-    <published>2016-02-03T19:00:00-05:00</published>
-    <updated>2017-11-16T23:40:48-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div&gt;I'm currently reading "Tools for Thought" by Howard Rheingold in which I learned about Doug Engelbart's mind blowing demo which was in fact recorded:&lt;/div&gt;
-&lt;div&gt;&lt;br&gt;&lt;/div&gt;
-&lt;div class="video-container youtube"&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/yJDv-zdhzMY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 </content>
   </entry>
 </feed>
