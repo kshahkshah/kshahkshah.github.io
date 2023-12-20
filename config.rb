@@ -34,25 +34,27 @@
 helpers do
   def generate_description(summary)
     summary = Nokogiri::HTML.parse(summary)
-    summary.xpath("//text()").to_s.gsub("\n", '. ')
+    summary.xpath('//text()').to_s.gsub("\n", '. ')
   end
 
   def get_image_lead(article)
     lead_image = nil
 
     begin
-      filename = article.metadata[:page]["attachments"].select{|k,v| v["maintype"]=="image"}.map{|k,v|v}.first["filename"]
+      filename = article.metadata[:page]['attachments'].select do |_k, v|
+                   v['maintype'] == 'image'
+                 end.map { |_k, v| v }.first['filename']
       lead_image = [asset_host, 'photos', filename].join('/')
-    rescue
+    rescue StandardError
     end
 
     unless lead_image
       parsed_body = Nokogiri::HTML.parse(article.body)
-      lead_image_el  = parsed_body.css('img').first
+      lead_image_el = parsed_body.css('img').first
       lead_image = lead_image_el['src'] if lead_image_el
     end
 
-    lead_image ? lead_image : image_path('greatwave.jpg')
+    lead_image || image_path('greatwave.jpg')
   end
 end
 
@@ -64,23 +66,22 @@ activate :automatic_image_sizes
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
-  blog.prefix = "blog"
+  blog.prefix = 'blog'
 
   # blog.permalink = "{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
-  blog.sources = "/{year}-{month}-{day}-{title}.html"
-  blog.taglink = "tags/{tag}.html"
-  blog.layout = "blog-post"
+  blog.sources = '/{year}-{month}-{day}-{title}.html'
+  blog.taglink = 'tags/{tag}.html'
+  blog.layout = 'blog-post'
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
-  blog.default_extension = ".markdown"
+  blog.default_extension = '.markdown'
 
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
-
+  blog.tag_template = 'tag.html'
+  blog.calendar_template = 'calendar.html'
 
   # Enable pagination
   blog.paginate = true
@@ -88,7 +89,7 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
-page "/feed.xml", layout: false
+page '/feed.xml', layout: false
 
 # Reload the browser automatically whenever files change
 # configure :development do
@@ -111,7 +112,7 @@ set :images_dir, 'images'
 set :build_dir, 'docs'
 
 set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown, fenced_code_blocks: true, smartypants: true
 set :url_root, 'https://www.kunalashah.com'
 
 activate :asset_hash
@@ -125,15 +126,14 @@ activate :gzip
 activate :search_engine_sitemap
 
 activate :automatic_clowncar,
-  :sizes => {
-    :small => 320,
-    :medium => 480,
-    :large => 640,
-    :huge => 940
-  },
-  :namespace_directory => %w(photos),
-  :filetypes => [:jpg, :jpeg, :png]
-
+         sizes: {
+           small: 320,
+           medium: 480,
+           large: 640,
+           huge: 940
+         },
+         namespace_directory: %w[photos],
+         filetypes: %i[jpg jpeg png]
 
 # Build-specific configuration
 configure :build do

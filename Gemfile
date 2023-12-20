@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'middleman'
+gem 'haml', '< 6.0'
+gem 'middleman', git: 'https://github.com/middleman/middleman.git'
 gem 'middleman-blog'
 gem 'middleman-syntax'
 
@@ -9,16 +10,12 @@ gem 'guard-middleman'
 
 gem 'middleman-search_engine_sitemap'
 
+gem 'middleman-automatic-clowncar', git: 'https://github.com/kshahkshah/middleman-automatic-clowncar.git'
 gem 'middleman-meta-tags'
-gem 'middleman-automatic-clowncar'
-# gem 'mail2frontmatter', git: 'https://github.com/kshahkshah/Mail2FrontMatter.git'
-# gem 'm2fm-autotag-subject', git: 'https://github.com/kshahkshah/m2fm-autotag-subject.git'
-# gem 'm2fm-automatic-clowncar', git: 'https://github.com/kshahkshah/m2fm-automatic-clowncar.git'
-# gem 'm2fm-automatic-embeds', git: 'https://github.com/kshahkshah/m2fm-automatic-embeds.git'
 
-gem 'rouge'
-gem 'redcarpet'
 gem 'builder'
 gem 'nokogiri'
+gem 'redcarpet'
+gem 'rouge'
 
 gem 'pry'
