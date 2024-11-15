@@ -8,7 +8,7 @@ public_folder: /images/uploads
 collections:
   - name: blog
     label: Blog
-    folder: source/posts/
+    folder: source/blog/
     extension: .html.md
     format: frontmatter
     create: true

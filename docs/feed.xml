@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://kunalashah.com/blog/2022/08/03/personal-user-manuals/"/>
     <id>http://kunalashah.com/blog/2022/08/03/personal-user-manuals/</id>
     <published>2022-08-03T10:10:00-04:00</published>
-    <updated>2022-08-03T10:18:47-04:00</updated>
+    <updated>2022-08-11T22:44:39-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -32,23 +32,11 @@
 </content>
   </entry>
   <entry>
-    <title>Time to Start Writing Again</title>
-    <link rel="alternate" href="http://kunalashah.com/blog/2022/08/02/writing-again/"/>
-    <id>http://kunalashah.com/blog/2022/08/02/writing-again/</id>
-    <published>2022-08-02T00:15:00-04:00</published>
-    <updated>2022-08-02T00:25:13-04:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;Hello 👋. After a long hiatus and letting my public writing and this personal site lapse, I&amp;rsquo;ve decided to resume my efforts here. I realized a while ago that with these blogs, absent a large pre-existing social media presence, we&amp;rsquo;re really writing for ourselves first and foremost. If someone happens to benefit from our writing, that is wonderful but a non-goal at this stage. I hope to use this space to continue to use this space to organize my thoughts as well as share things I like, find thought provoking, or beautiful.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
     <title>Alicia Keys in Paris</title>
     <link rel="alternate" href="http://kunalashah.com/blog/2017/09/19/alicia-keys-in-paris/"/>
     <id>http://kunalashah.com/blog/2017/09/19/alicia-keys-in-paris/</id>
     <published>2017-09-18T20:00:00-04:00</published>
-    <updated>2017-11-16T23:40:48-05:00</updated>
+    <updated>2023-12-20T09:18:14-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -61,7 +49,7 @@
     <link rel="alternate" href="http://kunalashah.com/blog/2017/05/09/st-vincent-andrew-bird/"/>
     <id>http://kunalashah.com/blog/2017/05/09/st-vincent-andrew-bird/</id>
     <published>2017-05-08T20:00:00-04:00</published>
-    <updated>2017-11-16T23:40:48-05:00</updated>
+    <updated>2023-12-20T09:18:14-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -72,7 +60,7 @@
     <link rel="alternate" href="http://kunalashah.com/blog/2017/03/21/recent-hn-links/"/>
     <id>http://kunalashah.com/blog/2017/03/21/recent-hn-links/</id>
     <published>2017-03-20T20:00:00-04:00</published>
-    <updated>2017-11-16T23:40:48-05:00</updated>
+    <updated>2023-12-20T09:18:14-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -99,11 +87,23 @@ http://sarabander.github.io/sicp/html/index.xhtml - Nicely formatted version of 
     <link rel="alternate" href="http://kunalashah.com/blog/2016/06/17/jackson-c-frank-blues-runs-the-game/"/>
     <id>http://kunalashah.com/blog/2016/06/17/jackson-c-frank-blues-runs-the-game/</id>
     <published>2016-06-16T20:00:00-04:00</published>
-    <updated>2017-11-16T23:40:48-05:00</updated>
+    <updated>2023-12-20T09:18:14-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="video-container youtube"&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/RgY4GnLGsLQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;br clear="all"&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <title>In the Mood for Love</title>
+    <link rel="alternate" href="http://kunalashah.com/blog/2016/02/26/in-the-mood-for-love/"/>
+    <id>http://kunalashah.com/blog/2016/02/26/in-the-mood-for-love/</id>
+    <published>2016-02-25T19:00:00-05:00</published>
+    <updated>2023-12-20T09:18:14-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="video-container youtube"&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/fIgU9aNpb9k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;br clear="all"&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;
 </content>
   </entry>
 </feed>
