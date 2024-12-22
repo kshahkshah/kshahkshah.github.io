@@ -427,15 +427,6 @@ dt {
   blockquote {
     margin: 0;
     font-style: italic;
-    font-weight: 500;
-
-    &:before {
-      content: "\201C";
-    }
-
-    &:after {
-      content: "\201D";
-    }
   }
 
   .attribution {
